@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parking Team Dashboard — Ironwood Church</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+  <div class="wrap">
+    <header class="top">
+      <div class="brand-row">
+        <img class="brand-mark" src="assets/ironwood-mark.png" alt="Ironwood Church mark">
+        <div class="title-block">
+          <h1>Parking Team</h1>
+          <div class="sub">Ironwood Church · Campus Serving</div>
+        </div>
+      </div>
+      <div class="sync-meta" id="sync-meta">Loading…</div>
+    </header>
+
+    <div class="stats" id="stats"></div>
+
+    <div class="controls">
+      <div class="shift-pills" id="shiftPills">
+        <button class="pill-btn active" data-shift="all">All</button>
+        <button class="pill-btn" data-shift="Shift 1">Shift 1</button>
+        <button class="pill-btn" data-shift="Shift 2">Shift 2</button>
+        <button class="pill-btn" data-shift="Shift 3">Shift 3</button>
+        <button class="pill-btn" data-shift="Seasonal">Seasonal</button>
+        <button class="pill-btn" data-shift="New">New</button>
+      </div>
+      <select class="sort-select" id="sortSelect">
+        <option value="name">Sort: Name</option>
+        <option value="frequency">Sort: Frequency</option>
+        <option value="lastServed">Sort: Last Served</option>
+      </select>
+    </div>
+
+    <div class="roster" id="roster"></div>
+
+    <footer class="foot">
+      Read-only — data refreshes when you ask Claude to pull the latest from CCB. Corrections
+      (like Jacob, who serves but doesn't sign up in CCB) happen the same way, by telling Claude.
+    </footer>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
