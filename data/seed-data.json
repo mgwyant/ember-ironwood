@@ -210,15 +210,15 @@
       "name": "Jacob Jurgens",
       "joined": "2026-03-13",
       "position": "Parking Lot",
-      "shift": "3",
+      "shift": "2",
       "status": "active",
       "lastServed": "2026-07-26",
-      "servedCount": 12,
+      "servedCount": 13,
       "rotation": "Weekly",
       "multiShiftSunday": true,
       "alsoServes": [],
-      "burnoutWarning": false,
-      "burnoutStreakWeeks": null,
+      "burnoutWarning": true,
+      "burnoutStreakWeeks": 8,
       "servedDates": [
         "2026-03-22",
         "2026-03-29",
@@ -227,6 +227,7 @@
         "2026-05-24",
         "2026-06-07",
         "2026-06-14",
+        "2026-06-21",
         "2026-06-28",
         "2026-07-05",
         "2026-07-12",
@@ -238,13 +239,11 @@
         "2026-04-19",
         "2026-05-24",
         "2026-06-14",
+        "2026-06-21",
         "2026-06-28",
-        "2026-07-05",
-        "2026-07-12",
-        "2026-07-19",
-        "2026-07-26"
+        "2026-07-05"
       ],
-      "note": "Confirmed by Mark serving (both shifts) at least the last 3 weeks as of 2026-07-28 -- doesn't always log it in CCB. Likely longer than 3 weeks but not yet confirmed further back."
+      "note": "Jun 21 filled in -- CCB showed no record, but Mark is confident Jacob served his usual double shift that week too. Separately, Jacob dropped from double-shift to single-shift starting at least Jul 19 (possibly Jul 12, Mark wasn't fully sure) -- shift number assumed as 2 since it's unconfirmed which one. Update if wrong."
     },
     {
       "id": "66170",

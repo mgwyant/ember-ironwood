@@ -2,11 +2,12 @@
   "53054": {
     "name": "Jacob Jurgens",
     "addedServedDates": [
-      { "date": "2026-07-12", "position": "Parking Lot", "shifts": ["2", "3"] },
-      { "date": "2026-07-19", "position": "Parking Lot", "shifts": ["2", "3"] },
-      { "date": "2026-07-26", "position": "Parking Lot", "shifts": ["2", "3"] }
+      { "date": "2026-06-21", "position": "Parking Lot", "shifts": ["2", "3"] },
+      { "date": "2026-07-12", "position": "Parking Lot", "shifts": ["2"] },
+      { "date": "2026-07-19", "position": "Parking Lot", "shifts": ["2"] },
+      { "date": "2026-07-26", "position": "Parking Lot", "shifts": ["2"] }
     ],
-    "note": "Confirmed by Mark serving (both shifts) at least the last 3 weeks as of 2026-07-28 -- doesn't always log it in CCB. Likely longer than 3 weeks but not yet confirmed further back.",
+    "note": "Jun 21 filled in -- CCB showed no record, but Mark is confident Jacob served his usual double shift that week too. Separately, Jacob dropped from double-shift to single-shift starting at least Jul 19 (possibly Jul 12, Mark wasn't fully sure) -- shift number assumed as 2 since it's unconfirmed which one. Update if wrong.",
     "recordedBy": "Mark, via chat, 2026-07-28"
   }
 }
