@@ -56,14 +56,15 @@ function freqRank(person) {
   return order[frequencyLabel(person)] ?? 0;
 }
 
-// Last 8 Sundays on/before the data's generatedAt date.
+// Last WEEKS_SHOWN Sundays (~6 months) on/before the data's generatedAt date.
+const WEEKS_SHOWN = 26;
 function recentSundays(generatedAt) {
   const asOf = parseISO(generatedAt);
   const dow = asOf.getDay(); // 0 = Sunday
   const mostRecentSunday = new Date(asOf);
   mostRecentSunday.setDate(asOf.getDate() - dow);
   const out = [];
-  for (let i = 7; i >= 0; i--) {
+  for (let i = WEEKS_SHOWN - 1; i >= 0; i--) {
     const d = new Date(mostRecentSunday);
     d.setDate(mostRecentSunday.getDate() - i * 7);
     out.push(d);
@@ -140,16 +141,22 @@ function renderTable(people) {
       ? `${p.position}${["1", "2", "3"].includes(p.shift) ? " · Shift " + p.shift : ""}`
       : "—";
 
-    const weeksHtml = weeks.map((wd) => {
+    const weeksHtml = weeks.map((wd, wi) => {
       const iso = toISO(wd);
-      const label = wd.toLocaleDateString("en-US", { month: "short", day: "numeric" }).split(" ")[1];
+      const isMonthStart = wi === 0 || wd.getMonth() !== weeks[wi - 1].getMonth();
+      const isLast = wi === weeks.length - 1;
+      const label = isMonthStart
+        ? wd.toLocaleDateString("en-US", { month: "short" })
+        : isLast
+          ? wd.toLocaleDateString("en-US", { month: "short", day: "numeric" })
+          : "";
       let cls = "blank";
       if (p.joined && iso >= p.joined) {
         cls = "off";
         if (p.doubleShiftDates.includes(iso)) cls = "double";
         else if (p.servedDates.includes(iso)) cls = "served";
       }
-      return `<div class="week"><div class="dot ${cls}"></div><div class="wl">${label}</div></div>`;
+      return `<div class="week"><div class="dot ${cls}" title="${iso}"></div><div class="wl">${label}</div></div>`;
     }).join("");
 
     const burnoutNote = p.burnoutWarning
@@ -171,7 +178,7 @@ function renderTable(people) {
         <div class="chev">&#8250;</div>
       </div>
       <div class="detail">
-        <div class="weeks">${weeksHtml}</div>
+        <div class="weeks-scroll"><div class="weeks">${weeksHtml}</div></div>
         <div class="legend">
           <span><span class="dot served"></span> served</span>
           <span><span class="dot double"></span> double shift</span>
