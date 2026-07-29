@@ -13,8 +13,17 @@ const STATUS_META = {
   new: { label: "New", cls: "new" },
 };
 
+const STAT_FILTERS = [
+  { id: "all", label: "On Team", cls: "", predicate: () => true },
+  { id: "active", label: "Active", cls: "good", predicate: (p) => p.status === "active" },
+  { id: "needs_review", label: "Needs Review", cls: "warn", predicate: (p) => p.status === "needs_review" },
+  { id: "also_serves", label: "Also Serve Elsewhere", cls: "", predicate: (p) => p.alsoServes.length > 0 },
+  { id: "burnout", label: "Burnout Warning", cls: "warn", predicate: (p) => p.burnoutWarning },
+];
+
 let seed = null;
 let activeShift = "all";
+let activeStatFilter = "all";
 let sortMode = "name";
 
 function parseISO(s) {
@@ -91,20 +100,18 @@ function renderTabs() {
 
 function renderStats(people) {
   const el = document.getElementById("stats");
-  const counts = {
-    total: people.length,
-    active: people.filter((p) => p.status === "active").length,
-    review: people.filter((p) => p.status === "needs_review").length,
-    also: people.filter((p) => p.alsoServes.length > 0).length,
-    burnout: people.filter((p) => p.burnoutWarning).length,
-  };
-  el.innerHTML = `
-    <div class="stat"><div class="n">${counts.total}</div><div class="l">On Team</div></div>
-    <div class="stat good"><div class="n">${counts.active}</div><div class="l">Active</div></div>
-    <div class="stat warn"><div class="n">${counts.review}</div><div class="l">Needs Review</div></div>
-    <div class="stat"><div class="n">${counts.also}</div><div class="l">Also Serve Elsewhere</div></div>
-    <div class="stat warn"><div class="n">${counts.burnout}</div><div class="l">Burnout Warning</div></div>
-  `;
+  el.innerHTML = "";
+  STAT_FILTERS.forEach((f) => {
+    const count = people.filter(f.predicate).length;
+    const div = document.createElement("div");
+    div.className = `stat ${f.cls}${f.id === activeStatFilter ? " selected" : ""}`;
+    div.innerHTML = `<div class="n">${count}</div><div class="l">${f.label}</div>`;
+    div.addEventListener("click", () => {
+      activeStatFilter = f.id;
+      render();
+    });
+    el.appendChild(div);
+  });
 }
 
 function renderTable(people) {
@@ -186,8 +193,10 @@ function renderTable(people) {
 }
 
 function applyFilter(people) {
-  if (activeShift === "all") return people;
-  return people.filter((p) => shiftGroupFor(p) === activeShift);
+  const statFilter = STAT_FILTERS.find((f) => f.id === activeStatFilter);
+  return people
+    .filter((p) => activeShift === "all" || shiftGroupFor(p) === activeShift)
+    .filter(statFilter.predicate);
 }
 
 function applySort(people) {

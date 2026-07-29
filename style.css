@@ -148,6 +148,15 @@ header.top {
   border-radius: 8px;
   padding: 12px 14px;
   box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: border-color 0.12s ease;
+}
+
+.stat:hover { border-color: var(--accent); }
+
+.stat.selected {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent-soft), var(--shadow);
 }
 
 .stat .n {
