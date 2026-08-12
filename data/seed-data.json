@@ -104,19 +104,21 @@
       "id": "70139",
       "name": "Brandon Orellana",
       "joined": "2026-07-26",
-      "position": null,
-      "shift": null,
-      "status": "new",
-      "lastServed": null,
-      "servedCount": 0,
+      "position": "Parking Lot",
+      "shift": "2",
+      "status": "served_once",
+      "lastServed": "2026-08-09",
+      "servedCount": 1,
       "rotation": null,
       "multiShiftSunday": false,
       "alsoServes": [],
       "burnoutWarning": false,
       "burnoutStreakWeeks": null,
-      "servedDates": [],
+      "servedDates": [
+        "2026-08-09"
+      ],
       "doubleShiftDates": [],
-      "note": ""
+      "note": "CCB shows no record -- Brandon didn't sign up, but Mark confirmed he served Aug 9."
     },
     {
       "id": "65705",

@@ -25,5 +25,13 @@
     ],
     "note": "CCB shows this as Accepted/served, but Mark confirmed Dan called out sick for his Aug 9 shift.",
     "recordedBy": "Mark, via chat, 2026-08-12"
+  },
+  "70139": {
+    "name": "Brandon Orellana",
+    "addedServedDates": [
+      { "date": "2026-08-09", "position": "Parking Lot", "shifts": ["2"] }
+    ],
+    "note": "CCB shows no record -- Brandon didn't sign up, but Mark confirmed he served Aug 9.",
+    "recordedBy": "Mark, via chat, 2026-08-12"
   }
 }
