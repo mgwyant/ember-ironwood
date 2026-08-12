@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-28",
+  "generatedAt": "2026-08-12",
   "source": "CCB Involvement > Serving, per-person pull via Claude in Chrome",
   "people": [
     {
@@ -30,8 +30,8 @@
       "position": "Parking Lot",
       "shift": "3",
       "status": "active",
-      "lastServed": "2026-07-19",
-      "servedCount": 10,
+      "lastServed": "2026-08-09",
+      "servedCount": 12,
       "rotation": "Bi-Weekly",
       "multiShiftSunday": false,
       "alsoServes": [],
@@ -47,7 +47,9 @@
         "2026-06-21",
         "2026-06-28",
         "2026-07-12",
-        "2026-07-19"
+        "2026-07-19",
+        "2026-08-02",
+        "2026-08-09"
       ],
       "doubleShiftDates": [],
       "note": ""
@@ -134,7 +136,7 @@
         "2026-04-05"
       ],
       "doubleShiftDates": [],
-      "note": ""
+      "note": "CCB shows this as Accepted/served, but Mark confirmed Dan called out sick for his Aug 9 shift."
     },
     {
       "id": "67191",
@@ -217,8 +219,8 @@
       "rotation": "Weekly",
       "multiShiftSunday": true,
       "alsoServes": [],
-      "burnoutWarning": true,
-      "burnoutStreakWeeks": 8,
+      "burnoutWarning": false,
+      "burnoutStreakWeeks": null,
       "servedDates": [
         "2026-03-22",
         "2026-03-29",
@@ -243,7 +245,7 @@
         "2026-06-28",
         "2026-07-05"
       ],
-      "note": "Jun 21 filled in -- CCB showed no record, but Mark is confident Jacob served his usual double shift that week too. Separately, Jacob dropped from double-shift to single-shift starting at least Jul 19 (possibly Jul 12, Mark wasn't fully sure) -- shift number assumed as 2 since it's unconfirmed which one. Update if wrong."
+      "note": "Jun 21 filled in -- CCB showed no record, but Mark is confident Jacob served his usual double shift that week too. Separately, Jacob dropped from double-shift to single-shift starting at least Jul 19 (possibly Jul 12, Mark wasn't fully sure) -- shift number assumed as 2 since it's unconfirmed which one. Update if wrong. Mark confirmed Jacob did NOT serve Aug 9 -- no correction needed for that since CCB already shows no record and Jacob's pattern is under-logging, not over-logging, so absence already reads correctly as not served."
     },
     {
       "id": "66170",
@@ -252,9 +254,9 @@
       "position": "Parking Lot",
       "shift": "2",
       "status": "active",
-      "lastServed": "2026-07-26",
-      "servedCount": 7,
-      "rotation": "Seasonal",
+      "lastServed": "2026-08-09",
+      "servedCount": 9,
+      "rotation": "Weekly",
       "multiShiftSunday": false,
       "alsoServes": [],
       "burnoutWarning": false,
@@ -266,7 +268,9 @@
         "2026-05-31",
         "2026-06-07",
         "2026-06-14",
-        "2026-07-26"
+        "2026-07-26",
+        "2026-08-02",
+        "2026-08-09"
       ],
       "doubleShiftDates": [],
       "note": ""
@@ -278,8 +282,8 @@
       "position": "Parking Lot",
       "shift": "2",
       "status": "active",
-      "lastServed": "2026-07-26",
-      "servedCount": 14,
+      "lastServed": "2026-08-09",
+      "servedCount": 16,
       "rotation": "Weekly",
       "multiShiftSunday": false,
       "alsoServes": [
@@ -301,7 +305,9 @@
         "2026-06-28",
         "2026-07-05",
         "2026-07-19",
-        "2026-07-26"
+        "2026-07-26",
+        "2026-08-02",
+        "2026-08-09"
       ],
       "doubleShiftDates": [],
       "note": ""
@@ -312,7 +318,7 @@
       "joined": "2026-03-02",
       "position": "Parking Lot",
       "shift": "2",
-      "status": "active",
+      "status": "needs_review",
       "lastServed": "2026-07-12",
       "servedCount": 16,
       "rotation": "Weekly",
@@ -341,7 +347,7 @@
       "doubleShiftDates": [
         "2026-04-12"
       ],
-      "note": ""
+      "note": "CCB shows this as Accepted/served, but Mark confirmed Jonathan was a no-show for his Aug 2 shift."
     },
     {
       "id": "67928",
@@ -440,8 +446,8 @@
       "position": "Campus Lead",
       "shift": "2",
       "status": "active",
-      "lastServed": "2026-07-26",
-      "servedCount": 14,
+      "lastServed": "2026-08-09",
+      "servedCount": 16,
       "rotation": "Weekly",
       "multiShiftSunday": false,
       "alsoServes": [],
@@ -461,7 +467,9 @@
         "2026-07-05",
         "2026-07-12",
         "2026-07-19",
-        "2026-07-26"
+        "2026-07-26",
+        "2026-08-02",
+        "2026-08-09"
       ],
       "doubleShiftDates": [],
       "note": "Now titled Campus Lead in CCB (Shift 2) -- promoted from Parking Lot leadership."
@@ -493,10 +501,10 @@
       "name": "Tony Blake",
       "joined": "2026-03-13",
       "position": "Parking Lot",
-      "shift": "3",
-      "status": "needs_review",
-      "lastServed": "2026-06-07",
-      "servedCount": 6,
+      "shift": "2",
+      "status": "active",
+      "lastServed": "2026-08-09",
+      "servedCount": 7,
       "rotation": "Bi-Weekly",
       "multiShiftSunday": false,
       "alsoServes": [
@@ -511,7 +519,8 @@
         "2026-04-05",
         "2026-04-19",
         "2026-05-03",
-        "2026-06-07"
+        "2026-06-07",
+        "2026-08-09"
       ],
       "doubleShiftDates": [],
       "note": ""
@@ -523,8 +532,8 @@
       "position": "Parking Lot",
       "shift": "2",
       "status": "active",
-      "lastServed": "2026-07-26",
-      "servedCount": 14,
+      "lastServed": "2026-08-09",
+      "servedCount": 16,
       "rotation": "Weekly",
       "multiShiftSunday": false,
       "alsoServes": [
@@ -546,7 +555,9 @@
         "2026-06-28",
         "2026-07-05",
         "2026-07-19",
-        "2026-07-26"
+        "2026-07-26",
+        "2026-08-02",
+        "2026-08-09"
       ],
       "doubleShiftDates": [],
       "note": ""

@@ -7,7 +7,23 @@
       { "date": "2026-07-19", "position": "Parking Lot", "shifts": ["2"] },
       { "date": "2026-07-26", "position": "Parking Lot", "shifts": ["2"] }
     ],
-    "note": "Jun 21 filled in -- CCB showed no record, but Mark is confident Jacob served his usual double shift that week too. Separately, Jacob dropped from double-shift to single-shift starting at least Jul 19 (possibly Jul 12, Mark wasn't fully sure) -- shift number assumed as 2 since it's unconfirmed which one. Update if wrong.",
-    "recordedBy": "Mark, via chat, 2026-07-28"
+    "note": "Jun 21 filled in -- CCB showed no record, but Mark is confident Jacob served his usual double shift that week too. Separately, Jacob dropped from double-shift to single-shift starting at least Jul 19 (possibly Jul 12, Mark wasn't fully sure) -- shift number assumed as 2 since it's unconfirmed which one. Update if wrong. Mark confirmed Jacob did NOT serve Aug 9 -- no correction needed for that since CCB already shows no record and Jacob's pattern is under-logging, not over-logging, so absence already reads correctly as not served.",
+    "recordedBy": "Mark, via chat, 2026-07-28 and 2026-08-12"
+  },
+  "2159": {
+    "name": "Jonathan Indie",
+    "removedServedDates": [
+      { "date": "2026-08-02", "position": "Parking Lot", "shifts": ["2"] }
+    ],
+    "note": "CCB shows this as Accepted/served, but Mark confirmed Jonathan was a no-show for his Aug 2 shift.",
+    "recordedBy": "Mark, via chat, 2026-08-12"
+  },
+  "65705": {
+    "name": "Dan Montanye",
+    "removedServedDates": [
+      { "date": "2026-08-09", "position": "Parking Lot", "shifts": ["2"] }
+    ],
+    "note": "CCB shows this as Accepted/served, but Mark confirmed Dan called out sick for his Aug 9 shift.",
+    "recordedBy": "Mark, via chat, 2026-08-12"
   }
 }

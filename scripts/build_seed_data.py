@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Build data/seed-data.json from a manual CCB Involvement>Serving pull.
 
-This encodes the one-time legacy pull done on 2026-07-28 (Claude driving
-Mark's signed-in Chrome through each person's CCB profile, per the "Data
-source & refresh model" section of ironwood-dashboard-spec.md). Re-run
-whenever a fresh pull is done -- update PEOPLE below and re-run this script.
+This encodes the most recent pull (Claude driving Mark's signed-in Chrome
+through each person's CCB profile, per the "Data source & refresh model"
+section of ironwood-dashboard-spec.md). Re-run whenever a fresh pull is
+done -- update PEOPLE and PULL_DATE below and re-run this script.
 
 CCB's own Active/Inactive field is not used -- per Mark, it's never kept up
 to date (people get removed from the group instead of marked inactive), so
@@ -22,7 +22,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 OUTPUT_PATH = REPO_ROOT / "data" / "seed-data.json"
 CORRECTIONS_PATH = REPO_ROOT / "data" / "corrections.json"
-PULL_DATE = date(2026, 7, 28)
+PULL_DATE = date(2026, 8, 12)
 
 # Each servedDates entry: (sunday_date, position, shift)
 # position: "Parking Lot" | "Campus Greeter" | "Campus Lead"
@@ -34,7 +34,8 @@ PEOPLE = [
             ("2026-03-29", "Campus Greeter", "2"), ("2026-04-26", "Parking Lot", "2"),
             ("2026-05-24", "Parking Lot", "2"), ("2026-05-31", "Campus Greeter", "1"),
             ("2026-06-07", "Parking Lot", "2"), ("2026-06-14", "Parking Lot", "2"),
-            ("2026-07-26", "Parking Lot", "2"),
+            ("2026-07-26", "Parking Lot", "2"), ("2026-08-02", "Parking Lot", "2"),
+            ("2026-08-09", "Parking Lot", "2"),
         ],
         "alsoServes": {},
     },
@@ -44,8 +45,9 @@ PEOPLE = [
             ("2026-03-22", "Parking Lot", "3"), ("2026-03-29", "Parking Lot", "3"),
             ("2026-04-05", "Parking Lot", "Easter"), ("2026-04-19", "Parking Lot", "2"),
             ("2026-05-03", "Parking Lot", "3"), ("2026-06-07", "Parking Lot", "3"),
+            ("2026-08-09", "Parking Lot", "2"),
         ],
-        "alsoServes": {"Communion Reset": "2026-07-12", "BUILD Leadership": "2026-04-23"},
+        "alsoServes": {"Communion Reset": "2026-08-02", "BUILD Leadership": "2026-04-23"},
     },
     {
         "id": "55675", "name": "Rob Brokaw", "joined": "2026-03-16",
@@ -109,6 +111,7 @@ PEOPLE = [
             ("2026-06-07", "Parking Lot", "2"), ("2026-06-14", "Parking Lot", "2"),
             ("2026-06-28", "Parking Lot", "2"), ("2026-07-05", "Parking Lot", "2"),
             ("2026-07-19", "Parking Lot", "2"), ("2026-07-26", "Parking Lot", "2"),
+            ("2026-08-02", "Parking Lot", "2"), ("2026-08-09", "Parking Lot", "2"),
         ],
         "alsoServes": {"Communion Prep": "2026-06-27"},
     },
@@ -122,6 +125,7 @@ PEOPLE = [
             ("2026-06-07", "Parking Lot", "2"), ("2026-06-14", "Parking Lot", "2"),
             ("2026-06-28", "Parking Lot", "2"), ("2026-07-05", "Parking Lot", "2"),
             ("2026-07-19", "Parking Lot", "2"), ("2026-07-26", "Parking Lot", "2"),
+            ("2026-08-02", "Parking Lot", "2"), ("2026-08-09", "Parking Lot", "2"),
         ],
         "alsoServes": {"Communion Prep": "2026-06-27"},
     },
@@ -136,7 +140,7 @@ PEOPLE = [
             ("2026-05-24", "Parking Lot", "2"), ("2026-05-31", "Parking Lot", "2"),
             ("2026-06-07", "Parking Lot", "2"), ("2026-06-14", "Parking Lot", "2"),
             ("2026-06-28", "Parking Lot", "2"), ("2026-07-05", "Parking Lot", "2"),
-            ("2026-07-12", "Parking Lot", "2"),
+            ("2026-07-12", "Parking Lot", "2"), ("2026-08-02", "Parking Lot", "2"),
         ],
         "alsoServes": {},
     },
@@ -169,13 +173,16 @@ PEOPLE = [
             ("2026-06-21", "Campus Lead", "2"), ("2026-06-28", "Campus Lead", "2"),
             ("2026-07-05", "Campus Lead", "2"), ("2026-07-12", "Campus Lead", "2"),
             ("2026-07-19", "Campus Lead", "2"), ("2026-07-26", "Campus Lead", "2"),
+            ("2026-08-02", "Campus Lead", "2"), ("2026-08-09", "Campus Lead", "2"),
         ],
         "alsoServes": {},
         "note": "Now titled Campus Lead in CCB (Shift 2) -- promoted from Parking Lot leadership.",
     },
     {
         "id": "65705", "name": "Dan Montanye", "joined": "2026-04-07",
-        "served": [("2026-04-05", "Parking Lot", "Easter")],
+        "served": [
+            ("2026-04-05", "Parking Lot", "Easter"), ("2026-08-09", "Parking Lot", "2"),
+        ],
         "alsoServes": {},
     },
     {
@@ -200,7 +207,7 @@ PEOPLE = [
         "served": [
             ("2026-03-22", "Parking Lot", "2"), ("2026-04-26", "Campus Greeter", "1"),
         ],
-        "alsoServes": {"Communion Reset": "2026-07-26"},
+        "alsoServes": {"Communion Reset": "2026-08-09"},
     },
     {
         "id": "36422", "name": "Ben Storrie", "joined": "2026-03-11",
@@ -210,6 +217,7 @@ PEOPLE = [
             ("2026-05-10", "Parking Lot", "3"), ("2026-06-07", "Parking Lot", "3"),
             ("2026-06-21", "Parking Lot", "3"), ("2026-06-28", "Parking Lot", "3"),
             ("2026-07-12", "Parking Lot", "3"), ("2026-07-19", "Parking Lot", "3"),
+            ("2026-08-02", "Parking Lot", "3"), ("2026-08-09", "Parking Lot", "3"),
         ],
         "alsoServes": {"Communion Prep": "2025-11-22"},  # stale -- excluded as current
     },
