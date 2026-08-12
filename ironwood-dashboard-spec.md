@@ -26,6 +26,10 @@
 - **Manual corrections** (e.g. Jacob, who serves but doesn't sign up in CCB) live in a small
   `data/corrections.json`, edited by Claude from plain-language prompts — "Jacob served every
   week this month," "add Bob Smith" — not a live in-browser edit feature.
+- **No-shows** are the mirror case: CCB records a signup as served even when the person didn't
+  actually show up. Also handled in `data/corrections.json`, as a `removedServedDates` entry
+  that cancels out the matching date/position/shift once it shows up in a pull, from a
+  plain-language prompt — "Jonathan no-showed his Aug 9 shift."
 
 ## Fields (per person)
 - Name, CCB System ID

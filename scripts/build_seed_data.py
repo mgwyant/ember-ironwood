@@ -9,6 +9,11 @@ whenever a fresh pull is done -- update PEOPLE below and re-run this script.
 CCB's own Active/Inactive field is not used -- per Mark, it's never kept up
 to date (people get removed from the group instead of marked inactive), so
 our own status is computed purely from serving gaps.
+
+data/corrections.json supports two entry types per person, both matched by
+(date, position, shift): "addedServedDates" backfills a serve CCB missed;
+"removedServedDates" cancels a no-show -- CCB records a signup as served
+even when the person didn't actually show up.
 """
 import json
 from datetime import date, timedelta
@@ -248,11 +253,20 @@ def build_person(p, corrections):
     raw_served = list(p["served"])
     correction_note = ""
     correction = corrections.get(p["id"])
+    removed = set()
     if correction:
-        for entry in correction["addedServedDates"]:
+        for entry in correction.get("addedServedDates", []):
             for shift in entry["shifts"]:
                 raw_served.append((entry["date"], entry["position"], shift))
+        for entry in correction.get("removedServedDates", []):
+            for shift in entry["shifts"]:
+                removed.add((entry["date"], entry["position"], shift))
         correction_note = correction["note"]
+
+    # removedServedDates strips no-shows -- CCB records a signup as served even when the
+    # person didn't actually show, so this cancels out a matching entry from PEOPLE's raw
+    # pull data (or from addedServedDates above) rather than ever adding a negative date.
+    raw_served = [(d, pos, shift) for d, pos, shift in raw_served if (d, pos, shift) not in removed]
 
     served = sorted(
         (date.fromisoformat(d), pos, shift) for d, pos, shift in raw_served if date.fromisoformat(d) <= PULL_DATE
