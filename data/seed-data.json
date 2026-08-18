@@ -119,24 +119,25 @@
         "2026-08-16"
       ],
       "doubleShiftDates": [],
-      "note": "CCB shows no record -- Brandon didn't sign up, but Mark confirmed he served Aug 9. Mark confirmed Brandon covered shift 3 on Aug 16 to help out -- not necessarily a permanent shift change."
+      "note": "CCB shows no record -- Brandon didn't sign up, but Mark confirmed he served Aug 9. He did sign up in CCB for his Aug 16 shift 3 (covering, not necessarily a permanent shift change), so that Sunday is raw pull data, not a correction."
     },
     {
       "id": "65705",
       "name": "Dan Montanye",
       "joined": "2026-04-07",
       "position": "Parking Lot",
-      "shift": "Easter",
-      "status": "served_once",
-      "lastServed": "2026-04-05",
-      "servedCount": 1,
+      "shift": "2",
+      "status": "active",
+      "lastServed": "2026-08-16",
+      "servedCount": 2,
       "rotation": null,
       "multiShiftSunday": false,
       "alsoServes": [],
       "burnoutWarning": false,
       "burnoutStreakWeeks": null,
       "servedDates": [
-        "2026-04-05"
+        "2026-04-05",
+        "2026-08-16"
       ],
       "doubleShiftDates": [],
       "note": "CCB shows this as Accepted/served, but Mark confirmed Dan called out sick for his Aug 9 shift."
@@ -162,32 +163,6 @@
         "2026-04-26"
       ],
       "doubleShiftDates": [],
-      "note": ""
-    },
-    {
-      "id": "49969",
-      "name": "Dennis Eaves",
-      "joined": "2026-03-13",
-      "position": "Parking Lot",
-      "shift": "3",
-      "status": "needs_review",
-      "lastServed": "2026-04-26",
-      "servedCount": 5,
-      "rotation": "Weekly",
-      "multiShiftSunday": true,
-      "alsoServes": [],
-      "burnoutWarning": false,
-      "burnoutStreakWeeks": null,
-      "servedDates": [
-        "2026-03-22",
-        "2026-03-29",
-        "2026-04-12",
-        "2026-04-19",
-        "2026-04-26"
-      ],
-      "doubleShiftDates": [
-        "2026-03-29"
-      ],
       "note": ""
     },
     {
@@ -286,8 +261,8 @@
       "position": "Parking Lot",
       "shift": "2",
       "status": "active",
-      "lastServed": "2026-08-09",
-      "servedCount": 16,
+      "lastServed": "2026-08-16",
+      "servedCount": 17,
       "rotation": "Weekly",
       "multiShiftSunday": false,
       "alsoServes": [
@@ -311,7 +286,8 @@
         "2026-07-19",
         "2026-07-26",
         "2026-08-02",
-        "2026-08-09"
+        "2026-08-09",
+        "2026-08-16"
       ],
       "doubleShiftDates": [],
       "note": ""
@@ -352,7 +328,7 @@
       "doubleShiftDates": [
         "2026-04-12"
       ],
-      "note": "CCB shows this as Accepted/served, but Mark confirmed Jonathan was a no-show for his Aug 2 shift. Mark confirmed Jonathan served his usual shift 2 on Aug 16, though wasn't sure if Jonathan had signed up for it in CCB."
+      "note": "CCB shows this as Accepted/served, but Mark confirmed Jonathan was a no-show for his Aug 2 shift."
     },
     {
       "id": "67928",
@@ -448,11 +424,11 @@
       "id": "57018",
       "name": "Scott Marsh",
       "joined": "2026-03-15",
-      "position": "Campus Lead",
+      "position": "Shift Lead",
       "shift": "2",
       "status": "active",
-      "lastServed": "2026-08-09",
-      "servedCount": 16,
+      "lastServed": "2026-08-16",
+      "servedCount": 17,
       "rotation": "Weekly",
       "multiShiftSunday": false,
       "alsoServes": [],
@@ -474,10 +450,11 @@
         "2026-07-19",
         "2026-07-26",
         "2026-08-02",
-        "2026-08-09"
+        "2026-08-09",
+        "2026-08-16"
       ],
       "doubleShiftDates": [],
-      "note": "Now titled Campus Lead in CCB (Shift 2) -- promoted from Parking Lot leadership."
+      "note": "Titled Shift Lead in CCB (Shift 2) -- renamed from Campus Lead once Mark stepped back from Greeter oversight."
     },
     {
       "id": "68149",
@@ -537,8 +514,8 @@
       "position": "Parking Lot",
       "shift": "2",
       "status": "active",
-      "lastServed": "2026-08-09",
-      "servedCount": 16,
+      "lastServed": "2026-08-16",
+      "servedCount": 17,
       "rotation": "Weekly",
       "multiShiftSunday": false,
       "alsoServes": [
@@ -562,7 +539,8 @@
         "2026-07-19",
         "2026-07-26",
         "2026-08-02",
-        "2026-08-09"
+        "2026-08-09",
+        "2026-08-16"
       ],
       "doubleShiftDates": [],
       "note": ""

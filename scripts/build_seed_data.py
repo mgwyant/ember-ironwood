@@ -25,7 +25,7 @@ CORRECTIONS_PATH = REPO_ROOT / "data" / "corrections.json"
 PULL_DATE = date(2026, 8, 18)
 
 # Each servedDates entry: (sunday_date, position, shift)
-# position: "Parking Lot" | "Campus Greeter" | "Campus Lead"
+# position: "Parking Lot" | "Campus Greeter" | "Shift Lead"
 # alsoServes: role -> most recent date seen (only 2026 activity counts as current)
 PEOPLE = [
     {
@@ -54,15 +54,6 @@ PEOPLE = [
         "served": [
             ("2026-03-22", "Parking Lot", "3"), ("2026-03-29", "Parking Lot", "3"),
             ("2026-04-26", "Parking Lot", "3"),
-        ],
-        "alsoServes": {},
-    },
-    {
-        "id": "49969", "name": "Dennis Eaves", "joined": "2026-03-13",
-        "served": [
-            ("2026-03-22", "Parking Lot", "3"), ("2026-03-29", "Parking Lot", "2"),
-            ("2026-03-29", "Parking Lot", "3"), ("2026-04-12", "Parking Lot", "3"),
-            ("2026-04-19", "Parking Lot", "3"), ("2026-04-26", "Parking Lot", "3"),
         ],
         "alsoServes": {},
     },
@@ -112,6 +103,7 @@ PEOPLE = [
             ("2026-06-28", "Parking Lot", "2"), ("2026-07-05", "Parking Lot", "2"),
             ("2026-07-19", "Parking Lot", "2"), ("2026-07-26", "Parking Lot", "2"),
             ("2026-08-02", "Parking Lot", "2"), ("2026-08-09", "Parking Lot", "2"),
+            ("2026-08-16", "Parking Lot", "2"),
         ],
         "alsoServes": {"Communion Prep": "2026-06-27"},
     },
@@ -126,6 +118,7 @@ PEOPLE = [
             ("2026-06-28", "Parking Lot", "2"), ("2026-07-05", "Parking Lot", "2"),
             ("2026-07-19", "Parking Lot", "2"), ("2026-07-26", "Parking Lot", "2"),
             ("2026-08-02", "Parking Lot", "2"), ("2026-08-09", "Parking Lot", "2"),
+            ("2026-08-16", "Parking Lot", "2"),
         ],
         "alsoServes": {"Communion Prep": "2026-06-27"},
     },
@@ -141,6 +134,7 @@ PEOPLE = [
             ("2026-06-07", "Parking Lot", "2"), ("2026-06-14", "Parking Lot", "2"),
             ("2026-06-28", "Parking Lot", "2"), ("2026-07-05", "Parking Lot", "2"),
             ("2026-07-12", "Parking Lot", "2"), ("2026-08-02", "Parking Lot", "2"),
+            ("2026-08-16", "Parking Lot", "2"),
         ],
         "alsoServes": {},
     },
@@ -166,22 +160,24 @@ PEOPLE = [
     {
         "id": "57018", "name": "Scott Marsh", "joined": "2026-03-15",
         "served": [
-            ("2026-04-12", "Campus Lead", "2"), ("2026-04-26", "Campus Lead", "2"),
-            ("2026-05-03", "Campus Lead", "2"), ("2026-05-10", "Campus Lead", "2"),
-            ("2026-05-17", "Campus Lead", "2"), ("2026-05-24", "Campus Lead", "2"),
-            ("2026-05-31", "Campus Lead", "2"), ("2026-06-07", "Campus Greeter", "2"),
-            ("2026-06-21", "Campus Lead", "2"), ("2026-06-28", "Campus Lead", "2"),
-            ("2026-07-05", "Campus Lead", "2"), ("2026-07-12", "Campus Lead", "2"),
-            ("2026-07-19", "Campus Lead", "2"), ("2026-07-26", "Campus Lead", "2"),
-            ("2026-08-02", "Campus Lead", "2"), ("2026-08-09", "Campus Lead", "2"),
+            ("2026-04-12", "Shift Lead", "2"), ("2026-04-26", "Shift Lead", "2"),
+            ("2026-05-03", "Shift Lead", "2"), ("2026-05-10", "Shift Lead", "2"),
+            ("2026-05-17", "Shift Lead", "2"), ("2026-05-24", "Shift Lead", "2"),
+            ("2026-05-31", "Shift Lead", "2"), ("2026-06-07", "Campus Greeter", "2"),
+            ("2026-06-21", "Shift Lead", "2"), ("2026-06-28", "Shift Lead", "2"),
+            ("2026-07-05", "Shift Lead", "2"), ("2026-07-12", "Shift Lead", "2"),
+            ("2026-07-19", "Shift Lead", "2"), ("2026-07-26", "Shift Lead", "2"),
+            ("2026-08-02", "Shift Lead", "2"), ("2026-08-09", "Shift Lead", "2"),
+            ("2026-08-16", "Shift Lead", "2"),
         ],
         "alsoServes": {},
-        "note": "Now titled Campus Lead in CCB (Shift 2) -- promoted from Parking Lot leadership.",
+        "note": "Titled Shift Lead in CCB (Shift 2) -- renamed from Campus Lead once Mark stepped back from Greeter oversight.",
     },
     {
         "id": "65705", "name": "Dan Montanye", "joined": "2026-04-07",
         "served": [
             ("2026-04-05", "Parking Lot", "Easter"), ("2026-08-09", "Parking Lot", "2"),
+            ("2026-08-16", "Parking Lot", "2"),
         ],
         "alsoServes": {},
     },
@@ -223,7 +219,9 @@ PEOPLE = [
     },
     {
         "id": "70139", "name": "Brandon Orellana", "joined": "2026-07-26",
-        "served": [],
+        "served": [
+            ("2026-08-16", "Parking Lot", "3"),
+        ],
         "alsoServes": {},
     },
 ]
