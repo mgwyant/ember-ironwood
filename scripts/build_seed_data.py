@@ -22,7 +22,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 OUTPUT_PATH = REPO_ROOT / "data" / "seed-data.json"
 CORRECTIONS_PATH = REPO_ROOT / "data" / "corrections.json"
-PULL_DATE = date(2026, 8, 12)
+PULL_DATE = date(2026, 8, 18)
 
 # Each servedDates entry: (sunday_date, position, shift)
 # position: "Parking Lot" | "Campus Greeter" | "Campus Lead"

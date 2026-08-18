@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12",
+  "generatedAt": "2026-08-18",
   "source": "CCB Involvement > Serving, per-person pull via Claude in Chrome",
   "people": [
     {
@@ -105,20 +105,21 @@
       "name": "Brandon Orellana",
       "joined": "2026-07-26",
       "position": "Parking Lot",
-      "shift": "2",
-      "status": "served_once",
-      "lastServed": "2026-08-09",
-      "servedCount": 1,
+      "shift": "3",
+      "status": "active",
+      "lastServed": "2026-08-16",
+      "servedCount": 2,
       "rotation": null,
       "multiShiftSunday": false,
       "alsoServes": [],
       "burnoutWarning": false,
       "burnoutStreakWeeks": null,
       "servedDates": [
-        "2026-08-09"
+        "2026-08-09",
+        "2026-08-16"
       ],
       "doubleShiftDates": [],
-      "note": "CCB shows no record -- Brandon didn't sign up, but Mark confirmed he served Aug 9."
+      "note": "CCB shows no record -- Brandon didn't sign up, but Mark confirmed he served Aug 9. Mark confirmed Brandon covered shift 3 on Aug 16 to help out -- not necessarily a permanent shift change."
     },
     {
       "id": "65705",
@@ -214,10 +215,10 @@
       "name": "Jacob Jurgens",
       "joined": "2026-03-13",
       "position": "Parking Lot",
-      "shift": "2",
+      "shift": "3",
       "status": "active",
-      "lastServed": "2026-07-26",
-      "servedCount": 13,
+      "lastServed": "2026-08-16",
+      "servedCount": 14,
       "rotation": "Weekly",
       "multiShiftSunday": true,
       "alsoServes": [],
@@ -236,7 +237,8 @@
         "2026-07-05",
         "2026-07-12",
         "2026-07-19",
-        "2026-07-26"
+        "2026-07-26",
+        "2026-08-16"
       ],
       "doubleShiftDates": [
         "2026-03-22",
@@ -247,7 +249,7 @@
         "2026-06-28",
         "2026-07-05"
       ],
-      "note": "Jun 21 filled in -- CCB showed no record, but Mark is confident Jacob served his usual double shift that week too. Separately, Jacob dropped from double-shift to single-shift starting at least Jul 19 (possibly Jul 12, Mark wasn't fully sure) -- shift number assumed as 2 since it's unconfirmed which one. Update if wrong. Mark confirmed Jacob did NOT serve Aug 9 -- no correction needed for that since CCB already shows no record and Jacob's pattern is under-logging, not over-logging, so absence already reads correctly as not served."
+      "note": "Jun 21 filled in -- CCB showed no record, but Mark is confident Jacob served his usual double shift that week too. Jacob dropped from double-shift to single-shift starting Jul 12 -- Mark confirmed 2026-08-18 the single shift is shift 3, not shift 2 as originally assumed (he's been on shift 3 for a while). Jacob's general pattern is to show up but not sign up in CCB, so his shifts are tracked here from chat confirmation rather than CCB pulls. Mark confirmed Jacob did NOT serve Aug 9 -- no correction needed for that since CCB already shows no record and Jacob's pattern is under-logging, not over-logging, so absence already reads correctly as not served."
     },
     {
       "id": "66170",
@@ -320,9 +322,9 @@
       "joined": "2026-03-02",
       "position": "Parking Lot",
       "shift": "2",
-      "status": "needs_review",
-      "lastServed": "2026-07-12",
-      "servedCount": 16,
+      "status": "active",
+      "lastServed": "2026-08-16",
+      "servedCount": 17,
       "rotation": "Weekly",
       "multiShiftSunday": true,
       "alsoServes": [],
@@ -344,12 +346,13 @@
         "2026-06-14",
         "2026-06-28",
         "2026-07-05",
-        "2026-07-12"
+        "2026-07-12",
+        "2026-08-16"
       ],
       "doubleShiftDates": [
         "2026-04-12"
       ],
-      "note": "CCB shows this as Accepted/served, but Mark confirmed Jonathan was a no-show for his Aug 2 shift."
+      "note": "CCB shows this as Accepted/served, but Mark confirmed Jonathan was a no-show for his Aug 2 shift. Mark confirmed Jonathan served his usual shift 2 on Aug 16, though wasn't sure if Jonathan had signed up for it in CCB."
     },
     {
       "id": "67928",
