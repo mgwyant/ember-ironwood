@@ -8,18 +8,18 @@ const SHIFT_TABS = ["Shift 1", "Shift 2", "Shift 3", "Irregular", "New"];
 
 const STATUS_META = {
   active: { label: "Active", cls: "active" },
-  needs_review: { label: "Needs Review", cls: "review" },
+  needs_review: { label: "Drop Off Warning", cls: "review" },
   served_once: { label: "Served Once", cls: "inactive" },
   new: { label: "New", cls: "new" },
   irregular: { label: "Irregular", cls: "inactive" },
 };
 
+// Click a tile to filter the roster to it; click the same one again to clear it.
 const STAT_FILTERS = [
-  { id: "all", label: "On Team", cls: "", predicate: () => true },
   { id: "active", label: "Active", cls: "good", predicate: (p) => p.status === "active" },
-  { id: "needs_review", label: "Needs Review", cls: "warn", predicate: (p) => p.status === "needs_review" },
-  { id: "also_serves", label: "Also Serve Elsewhere", cls: "", predicate: (p) => p.alsoServes.length > 0 },
+  { id: "irregular", label: "Irregular", cls: "", predicate: (p) => p.status === "irregular" },
   { id: "burnout", label: "Burnout Warning", cls: "warn", predicate: (p) => p.burnoutWarning },
+  { id: "needs_review", label: "Drop Off Warning", cls: "warn", predicate: (p) => p.status === "needs_review" },
 ];
 
 let seed = null;
@@ -109,7 +109,7 @@ function renderStats(people) {
     div.className = `stat ${f.cls}${f.id === activeStatFilter ? " selected" : ""}`;
     div.innerHTML = `<div class="n">${count}</div><div class="l">${f.label}</div>`;
     div.addEventListener("click", () => {
-      activeStatFilter = f.id;
+      activeStatFilter = activeStatFilter === f.id ? "all" : f.id;
       render();
     });
     el.appendChild(div);
@@ -205,7 +205,7 @@ function applyFilter(people) {
   const statFilter = STAT_FILTERS.find((f) => f.id === activeStatFilter);
   return people
     .filter((p) => activeShift === "all" || shiftGroupFor(p) === activeShift)
-    .filter(statFilter.predicate);
+    .filter((p) => !statFilter || statFilter.predicate(p));
 }
 
 function applySort(people) {
