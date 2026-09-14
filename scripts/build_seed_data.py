@@ -355,8 +355,12 @@ def build_person(p, corrections):
         # Needs Review only applies to a dedicated shift-team member going quiet --
         # irregular/occasional people are expected to have gaps, so they never get flagged.
         status = "needs_review"
-    else:
+    elif dedicated_shift:
         status = "active"
+    else:
+        # Not on a dedicated team -- "Active" would be misleading for someone who could
+        # easily not have served in months, so they get their own neutral status instead.
+        status = "irregular"
 
     rotation = infer_rotation(served_dates_only)
     streak = current_streak_weeks(served_dates_only, PULL_DATE)

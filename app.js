@@ -11,6 +11,7 @@ const STATUS_META = {
   needs_review: { label: "Needs Review", cls: "review" },
   served_once: { label: "Served Once", cls: "inactive" },
   new: { label: "New", cls: "new" },
+  irregular: { label: "Irregular", cls: "inactive" },
 };
 
 const STAT_FILTERS = [
