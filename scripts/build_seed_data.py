@@ -22,7 +22,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 OUTPUT_PATH = REPO_ROOT / "data" / "seed-data.json"
 CORRECTIONS_PATH = REPO_ROOT / "data" / "corrections.json"
-PULL_DATE = date(2026, 8, 23)
+PULL_DATE = date(2026, 9, 14)
 
 # Each servedDates entry: (sunday_date, position, shift)
 # position: "Parking Lot" | "Campus Greeter" | "Shift Lead"
@@ -35,7 +35,8 @@ PEOPLE = [
             ("2026-05-24", "Parking Lot", "2"), ("2026-05-31", "Campus Greeter", "1"),
             ("2026-06-07", "Parking Lot", "2"), ("2026-06-14", "Parking Lot", "2"),
             ("2026-07-26", "Parking Lot", "2"), ("2026-08-02", "Parking Lot", "2"),
-            ("2026-08-09", "Parking Lot", "2"),
+            ("2026-08-09", "Parking Lot", "2"), ("2026-09-06", "Parking Lot", "2"),
+            ("2026-09-13", "Parking Lot", "2"),
         ],
         "alsoServes": {},
     },
@@ -45,7 +46,7 @@ PEOPLE = [
             ("2026-03-22", "Parking Lot", "3"), ("2026-03-29", "Parking Lot", "3"),
             ("2026-04-05", "Parking Lot", "Easter"), ("2026-04-19", "Parking Lot", "2"),
             ("2026-05-03", "Parking Lot", "3"), ("2026-06-07", "Parking Lot", "3"),
-            ("2026-08-09", "Parking Lot", "2"),
+            ("2026-08-09", "Parking Lot", "2"), ("2026-08-30", "Parking Lot", "2"),
         ],
         "alsoServes": {"Communion Reset": "2026-08-02", "BUILD Leadership": "2026-04-23"},
     },
@@ -82,8 +83,12 @@ PEOPLE = [
         "served": [
             ("2026-04-05", "Parking Lot", "Easter"), ("2026-05-10", "Parking Lot", "2"),
             ("2026-06-28", "Campus Greeter", "1"), ("2026-07-05", "Campus Greeter", "1"),
+            ("2026-08-02", "Campus Greeter", "1"), ("2026-08-09", "Campus Greeter", "1"),
+            ("2026-08-16", "Campus Greeter", "1"), ("2026-08-30", "Campus Greeter", "1"),
+            ("2026-09-06", "Campus Greeter", "1"), ("2026-09-13", "Campus Greeter", "1"),
         ],
         "alsoServes": {},
+        "note": "CCB relabeled Greeter shift times around Jul 29 (service times shifted) -- '8:15am'/'8:30am Guest Services' are both still Shift 1 per Mark, just inconsistent CCB labeling during the transition.",
     },
     {
         "id": "62366", "name": "Kevin Harding", "joined": "2026-03-15",
@@ -103,9 +108,11 @@ PEOPLE = [
             ("2026-06-28", "Parking Lot", "2"), ("2026-07-05", "Parking Lot", "2"),
             ("2026-07-19", "Parking Lot", "2"), ("2026-07-26", "Parking Lot", "2"),
             ("2026-08-02", "Parking Lot", "2"), ("2026-08-09", "Parking Lot", "2"),
-            ("2026-08-16", "Parking Lot", "2"),
+            ("2026-08-16", "Parking Lot", "2"), ("2026-09-06", "Parking Lot", "2"),
+            ("2026-09-13", "Parking Lot", "2"), ("2026-09-27", "Parking Lot", "2"),
         ],
         "alsoServes": {"Communion Prep": "2026-06-27"},
+        "note": "Off Aug 23 and Aug 30 for vacation -- confirmed by Mark, not a no-show.",
     },
     {
         "id": "68858", "name": "Wendi Hove", "joined": "2026-03-15",
@@ -118,9 +125,12 @@ PEOPLE = [
             ("2026-06-28", "Parking Lot", "2"), ("2026-07-05", "Parking Lot", "2"),
             ("2026-07-19", "Parking Lot", "2"), ("2026-07-26", "Parking Lot", "2"),
             ("2026-08-02", "Parking Lot", "2"), ("2026-08-09", "Parking Lot", "2"),
-            ("2026-08-16", "Parking Lot", "2"),
+            ("2026-08-16", "Parking Lot", "2"), ("2026-09-06", "Parking Lot", "2"),
+            ("2026-09-13", "Parking Lot", "2"), ("2026-09-20", "Parking Lot", "2"),
+            ("2026-09-27", "Parking Lot", "2"),
         ],
         "alsoServes": {"Communion Prep": "2026-06-27"},
+        "note": "Off Aug 23 and Aug 30 for vacation -- confirmed by Mark, not a no-show.",
     },
     {
         "id": "2159", "name": "Jonathan Indie", "joined": "2026-03-02",
@@ -134,9 +144,11 @@ PEOPLE = [
             ("2026-06-07", "Parking Lot", "2"), ("2026-06-14", "Parking Lot", "2"),
             ("2026-06-28", "Parking Lot", "2"), ("2026-07-05", "Parking Lot", "2"),
             ("2026-07-12", "Parking Lot", "2"), ("2026-08-02", "Parking Lot", "2"),
-            ("2026-08-16", "Parking Lot", "2"),
+            ("2026-08-16", "Parking Lot", "2"), ("2026-08-30", "Parking Lot", "2"),
+            ("2026-09-06", "Parking Lot", "2"), ("2026-09-13", "Parking Lot", "3"),
         ],
         "alsoServes": {},
+        "note": "Covered Shift 3 instead of his usual Shift 2 on Sep 13 -- confirmed by Mark (part of the Shift 3 crew that day).",
     },
     {
         "id": "69327", "name": "Ian Jeffer", "joined": "2026-03-15",
@@ -169,23 +181,31 @@ PEOPLE = [
             ("2026-07-19", "Shift Lead", "2"), ("2026-07-26", "Shift Lead", "2"),
             ("2026-08-02", "Shift Lead", "2"), ("2026-08-09", "Shift Lead", "2"),
             ("2026-08-16", "Shift Lead", "2"), ("2026-08-23", "Shift Lead", "2"),
+            ("2026-08-30", "Shift Lead", "2"), ("2026-09-06", "Shift Lead", "2"),
+            ("2026-09-27", "Shift Lead", "2"),
         ],
         "alsoServes": {},
-        "note": "Titled Shift Lead in CCB (Shift 2) -- renamed from Campus Lead once Mark stepped back from Greeter oversight.",
+        "note": "Titled Shift Lead in CCB (Shift 2) -- renamed from Campus Lead once Mark stepped back from Greeter oversight. Off Sep 13 -- Mark covered both shifts that day.",
     },
     {
         "id": "65705", "name": "Dan Montanye", "joined": "2026-04-07",
         "served": [
             ("2026-04-05", "Parking Lot", "Easter"), ("2026-08-09", "Parking Lot", "2"),
             ("2026-08-16", "Parking Lot", "2"), ("2026-08-23", "Parking Lot", "2"),
+            ("2026-08-30", "Parking Lot", "2"), ("2026-09-13", "Parking Lot", "2"),
+            ("2026-09-20", "Parking Lot", "2"), ("2026-09-27", "Parking Lot", "2"),
         ],
         "alsoServes": {},
     },
     {
         "id": "mark-wyant", "name": "Mark Wyant", "joined": "2026-03-01",
-        "served": [("2026-08-23", "Shift Lead", "3")],
+        "served": [
+            ("2026-08-23", "Shift Lead", "3"), ("2026-08-30", "Shift Lead", "3"),
+            ("2026-09-06", "Shift Lead", "3"), ("2026-09-13", "Shift Lead", "2"),
+            ("2026-09-13", "Shift Lead", "3"),
+        ],
         "alsoServes": {},
-        "note": "Placeholder id -- no CCB member ID on file yet; update if/when known.",
+        "note": "Placeholder id -- no CCB member ID on file yet; update if/when known. Covered both shifts Sep 13 while Scott was off. Mark is Shift Lead for Shift 3 every week by default -- confirmed 2026-09-14 that any week with no other entry for him means he served Shift 3 and it just wasn't logged.",
     },
     {
         "id": "68149", "name": "Sean Moser", "joined": "2026-03-15",
@@ -220,15 +240,18 @@ PEOPLE = [
             ("2026-06-21", "Parking Lot", "3"), ("2026-06-28", "Parking Lot", "3"),
             ("2026-07-12", "Parking Lot", "3"), ("2026-07-19", "Parking Lot", "3"),
             ("2026-08-02", "Parking Lot", "3"), ("2026-08-09", "Parking Lot", "3"),
+            ("2026-08-30", "Parking Lot", "3"), ("2026-09-13", "Parking Lot", "3"),
         ],
         "alsoServes": {"Communion Prep": "2025-11-22"},  # stale -- excluded as current
     },
     {
         "id": "70139", "name": "Brandon Orellana", "joined": "2026-07-26",
         "served": [
-            ("2026-08-16", "Parking Lot", "3"),
+            ("2026-08-16", "Parking Lot", "3"), ("2026-09-06", "Parking Lot", "3"),
+            ("2026-09-13", "Parking Lot", "3"),
         ],
         "alsoServes": {},
+        "note": "Moved from covering to a regular Shift 3 spot -- confirmed by Mark.",
     },
 ]
 
