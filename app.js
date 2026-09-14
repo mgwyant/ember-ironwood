@@ -4,7 +4,7 @@
 // No in-browser editing -- corrections happen by telling Claude, which
 // regenerates and commits the data. See ironwood-dashboard-spec.md.
 
-const SHIFT_TABS = ["Shift 1", "Shift 2", "Shift 3", "Seasonal", "New"];
+const SHIFT_TABS = ["Shift 1", "Shift 2", "Shift 3", "Irregular", "New"];
 
 const STATUS_META = {
   active: { label: "Active", cls: "active" },
@@ -38,8 +38,8 @@ function formatShort(iso) {
 
 function shiftGroupFor(person) {
   if (person.status === "new") return "New";
-  if (["1", "2", "3"].includes(person.shift)) return "Shift " + person.shift;
-  return "Seasonal";
+  if (["1", "2", "3"].includes(person.dedicatedShift)) return "Shift " + person.dedicatedShift;
+  return "Irregular";
 }
 
 function frequencyLabel(person) {
@@ -186,6 +186,7 @@ function renderTable(people) {
           <span><span class="dot blank"></span> before joining</span>
         </div>
         <div class="detail-grid">
+          <div class="detail-block"><div class="k">Dedicated Team</div><div class="v">${p.dedicatedShift ? "Shift " + p.dedicatedShift : "Irregular"}</div></div>
           <div class="detail-block"><div class="k">Joined Team</div><div class="v">${formatShort(p.joined)}</div></div>
           <div class="detail-block"><div class="k">Also Serves</div><div class="v">${p.alsoServes.length ? p.alsoServes.join(", ") : "—"}</div></div>
           ${burnoutNote}

@@ -38,13 +38,20 @@
 - **Also Serves**: every other role/ministry a person serves, inside Campus Team (e.g. Campus
   Greeter) or elsewhere (e.g. Communion Prep, BUILD Leadership) — a list/count, not capped at 2
 - **Serving Rotation**: Weekly / Bi-Weekly / Seasonal — not in the CCB data, set manually per
-  person
+  person. Describes *frequency*, separate from Dedicated Shift Team below.
+- **Dedicated Shift Team**: Shift 1 / Shift 2 / Shift 3, or none — set manually by Mark
+  (`DEDICATED_TEAM` in `scripts/build_seed_data.py`), not inferred from serving history. This is
+  someone's actual team assignment; covering a different shift one week doesn't change it.
+  Drives the Shift 1/2/3 tabs on the dashboard (added 2026-09-14, replacing the old behavior of
+  grouping by whichever shift a person most recently served).
 - Per-Sunday serving history (from the Involvement > Serving pull)
 - Joined date
 
 ## Attendance & flags
-- **Needs Review**: Active in CCB but hasn't served their last 2 expected Sundays for their
-  rotation, with no correction on file. Doesn't apply to Seasonal.
+- **Needs Review**: a Dedicated Shift Team member who hasn't served their last ~3 expected
+  Sundays, with no correction on file. Only applies to people with a Dedicated Shift Team --
+  Irregular people are expected to have gaps, so they're never flagged (changed 2026-09-14;
+  previously applied to anyone Active).
 - **Multi-Shift Sunday**: flagged when someone serves more than one position/shift the same
   Sunday.
 - **Served Once / Never Served**: merged into a single bucket, not tracked separately.
@@ -63,8 +70,10 @@
 - Thresholds (12 / 6 weeks) are a starting point, tune once seen against real streaks.
 
 ## UI
-- Filter by **Shift 1 / Shift 2 / Shift 3 / Seasonal / New** — replaces the old team tabs, since
-  this build is Parking Team-first.
+- Filter by **Shift 1 / Shift 2 / Shift 3 / Irregular / New** — Shift 1/2/3 show each shift's
+  Dedicated Shift Team; everyone without one (occasional help, long-dormant, not yet assigned)
+  falls into Irregular. Renamed from "Seasonal" 2026-09-14 to avoid clashing with the Serving
+  Rotation value of the same name.
 - Sort by name, frequency, or last served.
 - Click a person to expand: per-week served history, join date, Also Serves, Burnout Warning
   detail when it applies.

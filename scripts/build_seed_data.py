@@ -24,6 +24,31 @@ OUTPUT_PATH = REPO_ROOT / "data" / "seed-data.json"
 CORRECTIONS_PATH = REPO_ROOT / "data" / "corrections.json"
 PULL_DATE = date(2026, 9, 14)
 
+# Dedicated shift-team assignment, set manually by Mark (not inferred from serving
+# history -- someone covering a different shift one week doesn't change their team).
+# Anyone not listed here falls into the "Irregular" bucket on the dashboard, and never
+# gets a Needs Review flag -- that flag exists to catch a dedicated person dropping off,
+# not to track people who are expected to be occasional. Update this dict directly when
+# Mark tells you someone joined or left a shift's core team.
+DEDICATED_TEAM = {
+    # Shift 2
+    "66170": "2",  # Jamie Weems
+    "68857": "2",  # Jeff Hove
+    "68858": "2",  # Wendi Hove
+    "2159": "2",  # Jonathan Indie
+    "65705": "2",  # Dan Montanye
+    "57018": "2",  # Scott Marsh (Shift Lead)
+    # Shift 3
+    "53054": "3",  # Jacob Jurgens
+    "36422": "3",  # Ben Storrie
+    "70139": "3",  # Brandon Orellana
+    "mark-wyant": "3",  # Mark Wyant (Shift Lead)
+    # Shift 1 -- none yet; Mark is building this team.
+    # Bob Flecken (61348) and Brad Hall (25360) intentionally left off as of 2026-09-14 --
+    # Bob hasn't served in months (moved to Irregular, can come back if he returns), and
+    # Brad's dedicated role is Campus Greeter Shift 1, not the Parking Shift 1 team.
+}
+
 # Each servedDates entry: (sunday_date, position, shift)
 # position: "Parking Lot" | "Campus Greeter" | "Shift Lead"
 # alsoServes: role -> most recent date seen (only 2026 activity counts as current)
@@ -319,13 +344,16 @@ def build_person(p, corrections):
 
     last_served = served_dates_only[-1] if served_dates_only else None
     weeks_since = (PULL_DATE - last_served).days // 7 if last_served else None
+    dedicated_shift = DEDICATED_TEAM.get(p["id"])
 
     if not served:
         # Never served yet == still "New", regardless of how long they've been on the team.
         status = "new"
     elif len(served_dates_only) <= 1:
         status = "served_once"
-    elif weeks_since is not None and weeks_since >= 3:
+    elif weeks_since is not None and weeks_since >= 3 and dedicated_shift:
+        # Needs Review only applies to a dedicated shift-team member going quiet --
+        # irregular/occasional people are expected to have gaps, so they never get flagged.
         status = "needs_review"
     else:
         status = "active"
@@ -345,6 +373,7 @@ def build_person(p, corrections):
         "joined": p["joined"],
         "position": current_position,
         "shift": current_shift,
+        "dedicatedShift": dedicated_shift,
         "status": status,
         "lastServed": last_served.isoformat() if last_served else None,
         "servedCount": len(served_dates_only),
