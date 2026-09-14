@@ -6,18 +6,22 @@
       { "date": "2026-07-12", "position": "Parking Lot", "shifts": ["3"] },
       { "date": "2026-07-19", "position": "Parking Lot", "shifts": ["3"] },
       { "date": "2026-07-26", "position": "Parking Lot", "shifts": ["3"] },
-      { "date": "2026-08-16", "position": "Parking Lot", "shifts": ["3"] }
+      { "date": "2026-08-16", "position": "Parking Lot", "shifts": ["3"] },
+      { "date": "2026-08-23", "position": "Parking Lot", "shifts": ["3"] }
     ],
-    "note": "Jun 21 filled in -- CCB showed no record, but Mark is confident Jacob served his usual double shift that week too. Jacob dropped from double-shift to single-shift starting Jul 12 -- Mark confirmed 2026-08-18 the single shift is shift 3, not shift 2 as originally assumed (he's been on shift 3 for a while). Jacob's general pattern is to show up but not sign up in CCB, so his shifts are tracked here from chat confirmation rather than CCB pulls. Mark confirmed Jacob did NOT serve Aug 9 -- no correction needed for that since CCB already shows no record and Jacob's pattern is under-logging, not over-logging, so absence already reads correctly as not served.",
-    "recordedBy": "Mark, via chat, 2026-07-28, 2026-08-12, and 2026-08-18"
+    "note": "Jun 21 filled in -- CCB showed no record, but Mark is confident Jacob served his usual double shift that week too. Jacob dropped from double-shift to single-shift starting Jul 12 -- Mark confirmed 2026-08-18 the single shift is shift 3, not shift 2 as originally assumed (he's been on shift 3 for a while). Jacob's general pattern is to show up but not sign up in CCB, so his shifts are tracked here from chat confirmation rather than CCB pulls. Mark confirmed Jacob did NOT serve Aug 9 -- no correction needed for that since CCB already shows no record and Jacob's pattern is under-logging, not over-logging, so absence already reads correctly as not served. Aug 23 filled in the same way -- not on CCB's schedule, but served shift 3 as usual.",
+    "recordedBy": "Mark, via chat, 2026-07-28, 2026-08-12, 2026-08-18, and 2026-08-24"
   },
   "2159": {
     "name": "Jonathan Indie",
     "removedServedDates": [
       { "date": "2026-08-02", "position": "Parking Lot", "shifts": ["2"] }
     ],
-    "note": "CCB shows this as Accepted/served, but Mark confirmed Jonathan was a no-show for his Aug 2 shift.",
-    "recordedBy": "Mark, via chat, 2026-08-12"
+    "addedServedDates": [
+      { "date": "2026-08-23", "position": "Parking Lot", "shifts": ["2"] }
+    ],
+    "note": "CCB shows Aug 2 as Accepted/served, but Mark confirmed Jonathan was a no-show that day. Aug 23 filled in -- Jonathan wasn't on CCB's schedule that week, but Mark confirmed he served shift 2 anyway.",
+    "recordedBy": "Mark, via chat, 2026-08-12 and 2026-08-24"
   },
   "65705": {
     "name": "Dan Montanye",
@@ -32,7 +36,23 @@
     "addedServedDates": [
       { "date": "2026-08-09", "position": "Parking Lot", "shifts": ["2"] }
     ],
-    "note": "CCB shows no record -- Brandon didn't sign up, but Mark confirmed he served Aug 9. He did sign up in CCB for his Aug 16 shift 3 (covering, not necessarily a permanent shift change), so that Sunday is raw pull data, not a correction.",
-    "recordedBy": "Mark, via chat, 2026-08-12"
+    "note": "CCB shows no record -- Brandon didn't sign up, but Mark confirmed he served Aug 9. He did sign up in CCB for his Aug 16 shift 3 (covering, not necessarily a permanent shift change), so that Sunday is raw pull data, not a correction. Mark confirmed Brandon was a no-show for Aug 23 -- not in the schedule Mark went from memory that week, so no record was ever added and no removal is needed.",
+    "recordedBy": "Mark, via chat, 2026-08-12 and 2026-08-24"
+  },
+  "36422": {
+    "name": "Ben Storrie",
+    "addedServedDates": [
+      { "date": "2026-08-23", "position": "Parking Lot", "shifts": ["3"] }
+    ],
+    "note": "CCB shows no record -- Ben wasn't on the schedule, but Mark confirmed he served his usual shift 3 anyway.",
+    "recordedBy": "Mark, via chat, 2026-08-24"
+  },
+  "66170": {
+    "name": "Jamie Weems",
+    "addedServedDates": [
+      { "date": "2026-08-23", "position": "Parking Lot", "shifts": ["2"] }
+    ],
+    "note": "Jamie tried to sign up in CCB but it didn't go through, so CCB shows no record -- Mark confirmed she served shift 2 anyway.",
+    "recordedBy": "Mark, via chat, 2026-08-24"
   }
 }

@@ -22,7 +22,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 OUTPUT_PATH = REPO_ROOT / "data" / "seed-data.json"
 CORRECTIONS_PATH = REPO_ROOT / "data" / "corrections.json"
-PULL_DATE = date(2026, 8, 18)
+PULL_DATE = date(2026, 8, 23)
 
 # Each servedDates entry: (sunday_date, position, shift)
 # position: "Parking Lot" | "Campus Greeter" | "Shift Lead"
@@ -168,7 +168,7 @@ PEOPLE = [
             ("2026-07-05", "Shift Lead", "2"), ("2026-07-12", "Shift Lead", "2"),
             ("2026-07-19", "Shift Lead", "2"), ("2026-07-26", "Shift Lead", "2"),
             ("2026-08-02", "Shift Lead", "2"), ("2026-08-09", "Shift Lead", "2"),
-            ("2026-08-16", "Shift Lead", "2"),
+            ("2026-08-16", "Shift Lead", "2"), ("2026-08-23", "Shift Lead", "2"),
         ],
         "alsoServes": {},
         "note": "Titled Shift Lead in CCB (Shift 2) -- renamed from Campus Lead once Mark stepped back from Greeter oversight.",
@@ -177,9 +177,15 @@ PEOPLE = [
         "id": "65705", "name": "Dan Montanye", "joined": "2026-04-07",
         "served": [
             ("2026-04-05", "Parking Lot", "Easter"), ("2026-08-09", "Parking Lot", "2"),
-            ("2026-08-16", "Parking Lot", "2"),
+            ("2026-08-16", "Parking Lot", "2"), ("2026-08-23", "Parking Lot", "2"),
         ],
         "alsoServes": {},
+    },
+    {
+        "id": "mark-wyant", "name": "Mark Wyant", "joined": "2026-03-01",
+        "served": [("2026-08-23", "Shift Lead", "3")],
+        "alsoServes": {},
+        "note": "Placeholder id -- no CCB member ID on file yet; update if/when known.",
     },
     {
         "id": "68149", "name": "Sean Moser", "joined": "2026-03-15",
