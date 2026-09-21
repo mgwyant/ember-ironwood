@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14",
+  "generatedAt": "2026-09-21",
   "source": "CCB Involvement > Serving, per-person pull via Claude in Chrome",
   "people": [
     {
@@ -32,8 +32,8 @@
       "shift": "3",
       "dedicatedShift": "3",
       "status": "active",
-      "lastServed": "2026-09-13",
-      "servedCount": 15,
+      "lastServed": "2026-09-20",
+      "servedCount": 16,
       "rotation": "Bi-Weekly",
       "multiShiftSunday": false,
       "alsoServes": [],
@@ -54,7 +54,8 @@
         "2026-08-09",
         "2026-08-23",
         "2026-08-30",
-        "2026-09-13"
+        "2026-09-13",
+        "2026-09-20"
       ],
       "doubleShiftDates": [],
       "note": "CCB shows no record -- Ben wasn't on the schedule, but Mark confirmed he served his usual shift 3 anyway."
@@ -67,9 +68,9 @@
       "shift": "2",
       "dedicatedShift": null,
       "status": "irregular",
-      "lastServed": "2026-05-17",
-      "servedCount": 4,
-      "rotation": "Bi-Weekly",
+      "lastServed": "2026-09-20",
+      "servedCount": 5,
+      "rotation": "Seasonal",
       "multiShiftSunday": false,
       "alsoServes": [],
       "burnoutWarning": false,
@@ -78,10 +79,11 @@
         "2026-03-22",
         "2026-04-05",
         "2026-04-19",
-        "2026-05-17"
+        "2026-05-17",
+        "2026-09-20"
       ],
       "doubleShiftDates": [],
-      "note": ""
+      "note": "Back after a gap since May 17 -- helped cover Shift 2 alongside Mark on Sep 20."
     },
     {
       "id": "25360",
@@ -121,8 +123,8 @@
       "shift": "3",
       "dedicatedShift": "3",
       "status": "active",
-      "lastServed": "2026-09-13",
-      "servedCount": 4,
+      "lastServed": "2026-09-20",
+      "servedCount": 5,
       "rotation": "Weekly",
       "multiShiftSunday": false,
       "alsoServes": [],
@@ -132,7 +134,8 @@
         "2026-08-09",
         "2026-08-16",
         "2026-09-06",
-        "2026-09-13"
+        "2026-09-13",
+        "2026-09-20"
       ],
       "doubleShiftDates": [],
       "note": "CCB shows no record -- Brandon didn't sign up, but Mark confirmed he served Aug 9. He did sign up in CCB for his Aug 16 shift 3 (covering, not necessarily a permanent shift change), so that Sunday is raw pull data, not a correction. Mark confirmed Brandon was a no-show for Aug 23; at the time CCB showed no record for that date so no removal was needed, but CCB has since backfilled an Accepted Shift 2 signup for Aug 23 -- removed to keep the no-show correct."
@@ -145,8 +148,8 @@
       "shift": "2",
       "dedicatedShift": "2",
       "status": "active",
-      "lastServed": "2026-09-13",
-      "servedCount": 6,
+      "lastServed": "2026-09-20",
+      "servedCount": 7,
       "rotation": "Weekly",
       "multiShiftSunday": false,
       "alsoServes": [],
@@ -158,7 +161,8 @@
         "2026-08-23",
         "2026-08-30",
         "2026-09-06",
-        "2026-09-13"
+        "2026-09-13",
+        "2026-09-20"
       ],
       "doubleShiftDates": [],
       "note": "CCB shows Aug 9 as Accepted/served, but Mark confirmed Dan called out sick for his Aug 9 shift. Sep 6 filled in -- CCB shows no record that week, but Mark confirmed Dan served shift 2 anyway."
@@ -252,7 +256,7 @@
         "2026-06-28",
         "2026-07-05"
       ],
-      "note": "Jun 21 filled in -- CCB showed no record, but Mark is confident Jacob served his usual double shift that week too. Jacob dropped from double-shift to single-shift starting Jul 12 -- Mark confirmed 2026-08-18 the single shift is shift 3, not shift 2 as originally assumed (he's been on shift 3 for a while). Jacob's general pattern is to show up but not sign up in CCB, so his shifts are tracked here from chat confirmation rather than CCB pulls. Mark confirmed Jacob did NOT serve Aug 9 -- no correction needed for that since CCB already shows no record and Jacob's pattern is under-logging, not over-logging, so absence already reads correctly as not served. Aug 23 filled in the same way -- not on CCB's schedule, but served shift 3 as usual. Sep 13 confirmed via Mark's shift roster (Shift 3 crew that day). Aug 30 and Sep 6 filled in on Mark's general assumption that Jacob was there as usual, not a specific memory of those two Sundays."
+      "note": "Jun 21 filled in -- CCB showed no record, but Mark is confident Jacob served his usual double shift that week too. Jacob dropped from double-shift to single-shift starting Jul 12 -- Mark confirmed 2026-08-18 the single shift is shift 3, not shift 2 as originally assumed (he's been on shift 3 for a while). Jacob's general pattern is to show up but not sign up in CCB, so his shifts are tracked here from chat confirmation rather than CCB pulls. Mark confirmed Jacob did NOT serve Aug 9 -- no correction needed for that since CCB already shows no record and Jacob's pattern is under-logging, not over-logging, so absence already reads correctly as not served. Aug 23 filled in the same way -- not on CCB's schedule, but served shift 3 as usual. Sep 13 confirmed via Mark's shift roster (Shift 3 crew that day). Aug 30 and Sep 6 filled in on Mark's general assumption that Jacob was there as usual, not a specific memory of those two Sundays. Mark confirmed Jacob could not serve Sep 20 -- no correction needed, CCB already shows no record for that date so absence reads correctly."
     },
     {
       "id": "66170",
@@ -452,8 +456,8 @@
       "shift": "3",
       "dedicatedShift": "3",
       "status": "active",
-      "lastServed": "2026-09-13",
-      "servedCount": 4,
+      "lastServed": "2026-09-20",
+      "servedCount": 5,
       "rotation": "Weekly",
       "multiShiftSunday": true,
       "alsoServes": [],
@@ -463,12 +467,14 @@
         "2026-08-23",
         "2026-08-30",
         "2026-09-06",
-        "2026-09-13"
+        "2026-09-13",
+        "2026-09-20"
       ],
       "doubleShiftDates": [
-        "2026-09-13"
+        "2026-09-13",
+        "2026-09-20"
       ],
-      "note": "Placeholder id -- no CCB member ID on file yet; update if/when known. Covered both shifts Sep 13 while Scott was off. Mark is Shift Lead for Shift 3 every week by default -- confirmed 2026-09-14 that any week with no other entry for him means he served Shift 3 and it just wasn't logged."
+      "note": "Placeholder id -- no CCB member ID on file yet; update if/when known. Covered both shifts Sep 13 and Sep 20 while Scott was off. Mark is Shift Lead for Shift 3 every week by default -- confirmed 2026-09-14 that any week with no other entry for him means he served Shift 3 and it just wasn't logged."
     },
     {
       "id": "55675",
@@ -595,8 +601,8 @@
       "shift": "2",
       "dedicatedShift": "2",
       "status": "active",
-      "lastServed": "2026-09-13",
-      "servedCount": 19,
+      "lastServed": "2026-09-20",
+      "servedCount": 20,
       "rotation": "Weekly",
       "multiShiftSunday": false,
       "alsoServes": [
@@ -623,7 +629,8 @@
         "2026-08-09",
         "2026-08-16",
         "2026-09-06",
-        "2026-09-13"
+        "2026-09-13",
+        "2026-09-20"
       ],
       "doubleShiftDates": [],
       "note": "Off Aug 23 and Aug 30 for vacation -- confirmed by Mark, not a no-show."
