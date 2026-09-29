@@ -22,7 +22,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 OUTPUT_PATH = REPO_ROOT / "data" / "seed-data.json"
 CORRECTIONS_PATH = REPO_ROOT / "data" / "corrections.json"
-PULL_DATE = date(2026, 9, 21)
+PULL_DATE = date(2026, 9, 29)
 
 # Dedicated shift-team assignment, set manually by Mark (not inferred from serving
 # history -- someone covering a different shift one week doesn't change their team).
@@ -61,7 +61,8 @@ PEOPLE = [
             ("2026-06-07", "Parking Lot", "2"), ("2026-06-14", "Parking Lot", "2"),
             ("2026-07-26", "Parking Lot", "2"), ("2026-08-02", "Parking Lot", "2"),
             ("2026-08-09", "Parking Lot", "2"), ("2026-09-06", "Parking Lot", "2"),
-            ("2026-09-13", "Parking Lot", "2"),
+            ("2026-09-13", "Parking Lot", "2"), ("2026-09-27", "Parking Lot", "2"),
+            ("2026-09-27", "Parking Lot", "3"),
         ],
         "alsoServes": {},
     },
@@ -113,6 +114,7 @@ PEOPLE = [
             ("2026-08-02", "Campus Greeter", "1"), ("2026-08-09", "Campus Greeter", "1"),
             ("2026-08-16", "Campus Greeter", "1"), ("2026-08-30", "Campus Greeter", "1"),
             ("2026-09-06", "Campus Greeter", "1"), ("2026-09-13", "Campus Greeter", "1"),
+            ("2026-09-27", "Campus Greeter", "1"),
         ],
         "alsoServes": {},
         "note": "CCB relabeled Greeter shift times around Jul 29 (service times shifted) -- '8:15am'/'8:30am Guest Services' are both still Shift 1 per Mark, just inconsistent CCB labeling during the transition.",
@@ -173,9 +175,10 @@ PEOPLE = [
             ("2026-07-12", "Parking Lot", "2"), ("2026-08-02", "Parking Lot", "2"),
             ("2026-08-16", "Parking Lot", "2"), ("2026-08-30", "Parking Lot", "2"),
             ("2026-09-06", "Parking Lot", "2"), ("2026-09-13", "Parking Lot", "3"),
+            ("2026-09-27", "Parking Lot", "3"),
         ],
         "alsoServes": {},
-        "note": "Covered Shift 3 instead of his usual Shift 2 on Sep 13 -- confirmed by Mark (part of the Shift 3 crew that day).",
+        "note": "Covered Shift 3 instead of his usual Shift 2 on Sep 13 and again on Sep 27 -- confirmed by Mark (with him at Shift 3 both times).",
     },
     {
         "id": "69327", "name": "Ian Jeffer", "joined": "2026-03-15",
@@ -230,10 +233,10 @@ PEOPLE = [
             ("2026-08-23", "Shift Lead", "3"), ("2026-08-30", "Shift Lead", "3"),
             ("2026-09-06", "Shift Lead", "3"), ("2026-09-13", "Shift Lead", "2"),
             ("2026-09-13", "Shift Lead", "3"), ("2026-09-20", "Shift Lead", "2"),
-            ("2026-09-20", "Shift Lead", "3"),
+            ("2026-09-20", "Shift Lead", "3"), ("2026-09-27", "Shift Lead", "3"),
         ],
         "alsoServes": {},
-        "note": "Placeholder id -- no CCB member ID on file yet; update if/when known. Covered both shifts Sep 13 and Sep 20 while Scott was off. Mark is Shift Lead for Shift 3 every week by default -- confirmed 2026-09-14 that any week with no other entry for him means he served Shift 3 and it just wasn't logged.",
+        "note": "Placeholder id -- no CCB member ID on file yet; update if/when known. Covered both shifts Sep 13 and Sep 20 while Scott was off; back to just his own Shift 3 on Sep 27 since Scott resumed Shift 2. Mark is Shift Lead for Shift 3 every week by default -- confirmed 2026-09-14 that any week with no other entry for him means he served Shift 3 and it just wasn't logged.",
     },
     {
         "id": "68149", "name": "Sean Moser", "joined": "2026-03-15",
@@ -272,12 +275,14 @@ PEOPLE = [
             ("2026-09-20", "Parking Lot", "3"),
         ],
         "alsoServes": {"Communion Prep": "2025-11-22"},  # stale -- excluded as current
+        "note": "Off Sep 27 -- confirmed by Mark, not a no-show.",
     },
     {
         "id": "70139", "name": "Brandon Orellana", "joined": "2026-07-26",
         "served": [
             ("2026-08-16", "Parking Lot", "3"), ("2026-09-06", "Parking Lot", "3"),
             ("2026-09-13", "Parking Lot", "3"), ("2026-09-20", "Parking Lot", "3"),
+            ("2026-09-27", "Parking Lot", "3"),
         ],
         "alsoServes": {},
         "note": "Moved from covering to a regular Shift 3 spot -- confirmed by Mark.",
