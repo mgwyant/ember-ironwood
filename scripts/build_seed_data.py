@@ -22,7 +22,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 OUTPUT_PATH = REPO_ROOT / "data" / "seed-data.json"
 CORRECTIONS_PATH = REPO_ROOT / "data" / "corrections.json"
-PULL_DATE = date(2026, 10, 19)
+PULL_DATE = date(2026, 10, 26)
 
 # Dedicated shift-team assignment, set manually by Mark (not inferred from serving
 # history -- someone covering a different shift one week doesn't change their team).
@@ -40,7 +40,7 @@ DEDICATED_TEAM = {
     # Shift 3
     "53054": "3",  # Jacob Jurgens
     "36422": "3",  # Ben Storrie
-    "2159": "3",  # Jonathan Indie -- moved from Shift 2 per Mark, 2026-10-07
+    "2159": "latest",  # Jonathan Indie -- floats; shown on whichever shift he served last, per Mark 2026-10-26
     "70139": "3",  # Brandon Orellana
     "mark-wyant": "3",  # Mark Wyant (Shift Lead)
     # Shift 1 -- none yet; Mark is building this team.
@@ -140,6 +140,7 @@ PEOPLE = [
             ("2026-08-16", "Parking Lot", "2"), ("2026-09-06", "Parking Lot", "2"),
             ("2026-09-13", "Parking Lot", "2"), ("2026-09-27", "Parking Lot", "2"),
             ("2026-10-04", "Parking Lot", "2"), ("2026-10-18", "Parking Lot", "2"),
+            ("2026-10-25", "Parking Lot", "2"),
         ],
         "alsoServes": {"Communion Prep": "2026-06-27"},
         "note": "Off Aug 23 and Aug 30 for vacation -- confirmed by Mark, not a no-show. Off Oct 11 -- called out well in advance, per Mark.",
@@ -178,10 +179,10 @@ PEOPLE = [
             ("2026-08-16", "Parking Lot", "2"), ("2026-08-30", "Parking Lot", "2"),
             ("2026-09-06", "Parking Lot", "2"), ("2026-09-13", "Parking Lot", "3"),
             ("2026-09-27", "Parking Lot", "3"), ("2026-10-04", "Parking Lot", "3"),
-            ("2026-10-11", "Parking Lot", "2"),
+            ("2026-10-11", "Parking Lot", "2"), ("2026-10-25", "Parking Lot", "2"),
         ],
         "alsoServes": {},
-        "note": "Moved from Shift 2 to the Shift 3 team per Mark on 2026-10-07, after serving Shift 3 on Sep 13, Sep 27, and Oct 4.",
+        "note": "Floats between Shift 2 and Shift 3 -- per Mark (2026-10-26) the dashboard just shows him on whichever shift he served last. Was moved to Shift 3 on 2026-10-07, then served Shift 2 on Oct 11 and Oct 25.",
     },
     {
         "id": "69327", "name": "Ian Jeffer", "joined": "2026-03-15",
@@ -200,6 +201,7 @@ PEOPLE = [
             ("2026-06-28", "Parking Lot", "3"), ("2026-07-05", "Parking Lot", "2"),
             ("2026-07-05", "Parking Lot", "3"), ("2026-10-04", "Parking Lot", "3"),
             ("2026-10-11", "Parking Lot", "3"), ("2026-10-18", "Parking Lot", "3"),
+            ("2026-10-25", "Parking Lot", "3"),
         ],
         "alsoServes": {},
     },
@@ -217,7 +219,7 @@ PEOPLE = [
             ("2026-08-16", "Shift Lead", "2"), ("2026-08-23", "Shift Lead", "2"),
             ("2026-08-30", "Shift Lead", "2"), ("2026-09-06", "Shift Lead", "2"),
             ("2026-09-27", "Shift Lead", "2"), ("2026-10-11", "Shift Lead", "2"),
-            ("2026-10-18", "Shift Lead", "2"),
+            ("2026-10-18", "Shift Lead", "2"), ("2026-10-25", "Shift Lead", "2"),
         ],
         "alsoServes": {},
         "note": "Titled Shift Lead in CCB (Shift 2) -- renamed from Campus Lead once Mark stepped back from Greeter oversight. Off Sep 13 and Oct 4 -- Mark covered both shifts those days.",
@@ -229,7 +231,7 @@ PEOPLE = [
             ("2026-08-16", "Parking Lot", "2"), ("2026-08-23", "Parking Lot", "2"),
             ("2026-08-30", "Parking Lot", "2"), ("2026-09-13", "Parking Lot", "2"),
             ("2026-09-20", "Parking Lot", "2"), ("2026-09-27", "Parking Lot", "2"),
-            ("2026-10-04", "Parking Lot", "2"),
+            ("2026-10-04", "Parking Lot", "2"), ("2026-10-25", "Parking Lot", "2"),
         ],
         "alsoServes": {},
     },
@@ -245,7 +247,7 @@ PEOPLE = [
             ("2026-10-18", "Shift Lead", "3"),
         ],
         "alsoServes": {},
-        "note": "Placeholder id -- no CCB member ID on file yet; update if/when known. Covered both shifts Sep 13 and Sep 20 while Scott was off; back to just his own Shift 3 on Sep 27 since Scott resumed Shift 2. Covered both shifts again Oct 4 while Scott was off. On Oct 11 he led his own Shift 3 and also helped park cars on Shift 2 (not leading -- Scott led it) because Shift 2 was short-handed. Mark is Shift Lead for Shift 3 every week by default -- confirmed 2026-09-14 that any week with no other entry for him means he served Shift 3 and it just wasn't logged. Oct 18: just his own Shift 3. As of 2026-10-19 he's looking at taking a week off soon with others leading -- confirm before applying the Shift 3 default for the next few weeks.",
+        "note": "Placeholder id -- no CCB member ID on file yet; update if/when known. Covered both shifts Sep 13 and Sep 20 while Scott was off; back to just his own Shift 3 on Sep 27 since Scott resumed Shift 2. Covered both shifts again Oct 4 while Scott was off. On Oct 11 he led his own Shift 3 and also helped park cars on Shift 2 (not leading -- Scott led it) because Shift 2 was short-handed. Mark is Shift Lead for Shift 3 every week by default -- confirmed 2026-09-14 that any week with no other entry for him means he served Shift 3 and it just wasn't logged. Oct 18: just his own Shift 3. Oct 25: took the week off and Shift 3 was canceled -- confirmed by Mark 2026-10-26, so no entry that week (the Shift 3 default doesn't apply).",
     },
     {
         "id": "68149", "name": "Sean Moser", "joined": "2026-03-15",
@@ -365,6 +367,10 @@ def build_person(p, corrections):
     last_served = served_dates_only[-1] if served_dates_only else None
     weeks_since = (PULL_DATE - last_served).days // 7 if last_served else None
     dedicated_shift = DEDICATED_TEAM.get(p["id"])
+    if dedicated_shift == "latest":
+        # Floater: team follows his most recent regular (non-Easter) shift.
+        regular_shifts = [shift for _, _, shift in served if shift in ("1", "2", "3")]
+        dedicated_shift = regular_shifts[-1] if regular_shifts else None
 
     if not served:
         # Never served yet == still "New", regardless of how long they've been on the team.
