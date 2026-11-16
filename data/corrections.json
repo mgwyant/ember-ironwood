@@ -48,10 +48,11 @@
   "57018": {
     "name": "Scott Marsh",
     "removedServedDates": [
-      { "date": "2026-11-08", "position": "Shift Lead", "shifts": ["2"] }
+      { "date": "2026-11-08", "position": "Shift Lead", "shifts": ["2"] },
+      { "date": "2026-11-15", "position": "Shift Lead", "shifts": ["2"] }
     ],
-    "note": "Titled Shift Lead in CCB (Shift 2). Off Sep 13 and Oct 4 -- Mark covered both shifts those days. Nov 8: CCB shows him accepted as Shift Lead for Shift 2, but Mark confirmed Scott called out sick, so the signup is removed -- Mark covered both shifts.",
-    "recordedBy": "Mark, via chat, 2026-11-09"
+    "note": "Titled Shift Lead in CCB (Shift 2). Off Sep 13 and Oct 4 -- Mark covered both shifts those days. Nov 8: CCB shows him accepted as Shift Lead for Shift 2, but Mark confirmed Scott called out sick, so the signup is removed -- Mark covered both shifts. Nov 15: Scott was in the ER and did not serve -- Mark covered both shifts. CCB wasn't pulled that week (Mark gave the roster directly), so this removal guards against any Nov 15 signup showing up in a later pull.",
+    "recordedBy": "Mark, via chat, 2026-11-09 and 2026-11-16"
   },
   "70139": {
     "name": "Brandon Orellana",

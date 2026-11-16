@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09",
+  "generatedAt": "2026-11-16",
   "source": "CCB Involvement > Serving, per-person pull via Claude in Chrome",
   "people": [
     {
@@ -32,8 +32,8 @@
       "shift": "3",
       "dedicatedShift": "3",
       "status": "active",
-      "lastServed": "2026-11-08",
-      "servedCount": 19,
+      "lastServed": "2026-11-15",
+      "servedCount": 20,
       "rotation": "Bi-Weekly",
       "multiShiftSunday": false,
       "alsoServes": [],
@@ -58,7 +58,8 @@
         "2026-09-20",
         "2026-10-11",
         "2026-11-01",
-        "2026-11-08"
+        "2026-11-08",
+        "2026-11-15"
       ],
       "doubleShiftDates": [],
       "note": "CCB shows no record -- Ben wasn't on the schedule, but Mark confirmed he served his usual shift 3 anyway. Oct 4 is the opposite case -- CCB shows him accepted for Shift 3, but Mark confirmed Ben called out sick that day, so the signup is removed."
@@ -157,8 +158,8 @@
       "shift": "2",
       "dedicatedShift": "2",
       "status": "active",
-      "lastServed": "2026-11-08",
-      "servedCount": 13,
+      "lastServed": "2026-11-15",
+      "servedCount": 14,
       "rotation": "Weekly",
       "multiShiftSunday": false,
       "alsoServes": [],
@@ -177,7 +178,8 @@
         "2026-10-18",
         "2026-10-25",
         "2026-11-01",
-        "2026-11-08"
+        "2026-11-08",
+        "2026-11-15"
       ],
       "doubleShiftDates": [],
       "note": "CCB shows Aug 9 as Accepted/served, but Mark confirmed Dan called out sick for his Aug 9 shift. Sep 6 filled in -- CCB shows no record that week, but Mark confirmed Dan served shift 2 anyway. Oct 18 filled in the same way -- not on CCB's schedule, but Mark confirmed he served shift 2. Nov 8 filled in the same way."
@@ -235,8 +237,8 @@
       "shift": "3",
       "dedicatedShift": "3",
       "status": "active",
-      "lastServed": "2026-11-08",
-      "servedCount": 24,
+      "lastServed": "2026-11-15",
+      "servedCount": 25,
       "rotation": "Weekly",
       "multiShiftSunday": true,
       "alsoServes": [],
@@ -266,7 +268,8 @@
         "2026-10-11",
         "2026-10-18",
         "2026-11-01",
-        "2026-11-08"
+        "2026-11-08",
+        "2026-11-15"
       ],
       "doubleShiftDates": [
         "2026-03-22",
@@ -324,8 +327,8 @@
       "shift": "2",
       "dedicatedShift": "2",
       "status": "active",
-      "lastServed": "2026-11-01",
-      "servedCount": 24,
+      "lastServed": "2026-11-15",
+      "servedCount": 25,
       "rotation": "Weekly",
       "multiShiftSunday": false,
       "alsoServes": [
@@ -357,7 +360,8 @@
         "2026-10-04",
         "2026-10-18",
         "2026-10-25",
-        "2026-11-01"
+        "2026-11-01",
+        "2026-11-15"
       ],
       "doubleShiftDates": [],
       "note": "Off Aug 23 and Aug 30 for vacation -- confirmed by Mark, not a no-show. Off Oct 11 -- called out well in advance, per Mark."
@@ -367,11 +371,11 @@
       "name": "Jonathan Indie",
       "joined": "2026-03-02",
       "position": "Parking Lot",
-      "shift": "2",
-      "dedicatedShift": "2",
+      "shift": "3",
+      "dedicatedShift": "3",
       "status": "active",
-      "lastServed": "2026-10-25",
-      "servedCount": 25,
+      "lastServed": "2026-11-15",
+      "servedCount": 26,
       "rotation": "Weekly",
       "multiShiftSunday": true,
       "alsoServes": [],
@@ -402,7 +406,8 @@
         "2026-09-27",
         "2026-10-04",
         "2026-10-11",
-        "2026-10-25"
+        "2026-10-25",
+        "2026-11-15"
       ],
       "doubleShiftDates": [
         "2026-04-12"
@@ -488,8 +493,8 @@
       "shift": "3",
       "dedicatedShift": "3",
       "status": "active",
-      "lastServed": "2026-11-08",
-      "servedCount": 11,
+      "lastServed": "2026-11-15",
+      "servedCount": 12,
       "rotation": "Weekly",
       "multiShiftSunday": true,
       "alsoServes": [],
@@ -506,16 +511,18 @@
         "2026-10-11",
         "2026-10-18",
         "2026-11-01",
-        "2026-11-08"
+        "2026-11-08",
+        "2026-11-15"
       ],
       "doubleShiftDates": [
         "2026-09-13",
         "2026-09-20",
         "2026-10-04",
         "2026-10-11",
-        "2026-11-08"
+        "2026-11-08",
+        "2026-11-15"
       ],
-      "note": "Placeholder id -- no CCB member ID on file yet; update if/when known. Covered both shifts Sep 13 and Sep 20 while Scott was off; back to just his own Shift 3 on Sep 27 since Scott resumed Shift 2. Covered both shifts again Oct 4 while Scott was off. On Oct 11 he led his own Shift 3 and also helped park cars on Shift 2 (not leading -- Scott led it) because Shift 2 was short-handed. Mark is Shift Lead for Shift 3 every week by default -- confirmed 2026-09-14 that any week with no other entry for him means he served Shift 3 and it just wasn't logged. Oct 18: just his own Shift 3. Oct 25: took the week off and Shift 3 was canceled -- confirmed by Mark 2026-10-26, so no entry that week (the Shift 3 default doesn't apply). Nov 1: back to just his own Shift 3, confirmed by Mark 2026-11-02. Nov 8: covered both shifts while Scott was out sick, confirmed by Mark 2026-11-09."
+      "note": "Placeholder id -- no CCB member ID on file yet; update if/when known. Covered both shifts Sep 13 and Sep 20 while Scott was off; back to just his own Shift 3 on Sep 27 since Scott resumed Shift 2. Covered both shifts again Oct 4 while Scott was off. On Oct 11 he led his own Shift 3 and also helped park cars on Shift 2 (not leading -- Scott led it) because Shift 2 was short-handed. Mark is Shift Lead for Shift 3 every week by default -- confirmed 2026-09-14 that any week with no other entry for him means he served Shift 3 and it just wasn't logged. Oct 18: just his own Shift 3. Oct 25: took the week off and Shift 3 was canceled -- confirmed by Mark 2026-10-26, so no entry that week (the Shift 3 default doesn't apply). Nov 1: back to just his own Shift 3, confirmed by Mark 2026-11-02. Nov 8: covered both shifts while Scott was out sick, confirmed by Mark 2026-11-09. Nov 15: covered both shifts again while Scott was in the ER, per Mark 2026-11-16."
     },
     {
       "id": "55675",
@@ -583,7 +590,7 @@
         "2026-11-01"
       ],
       "doubleShiftDates": [],
-      "note": "Titled Shift Lead in CCB (Shift 2). Off Sep 13 and Oct 4 -- Mark covered both shifts those days. Nov 8: CCB shows him accepted as Shift Lead for Shift 2, but Mark confirmed Scott called out sick, so the signup is removed -- Mark covered both shifts."
+      "note": "Titled Shift Lead in CCB (Shift 2). Off Sep 13 and Oct 4 -- Mark covered both shifts those days. Nov 8: CCB shows him accepted as Shift Lead for Shift 2, but Mark confirmed Scott called out sick, so the signup is removed -- Mark covered both shifts. Nov 15: Scott was in the ER and did not serve -- Mark covered both shifts. CCB wasn't pulled that week (Mark gave the roster directly), so this removal guards against any Nov 15 signup showing up in a later pull."
     },
     {
       "id": "68149",
@@ -647,8 +654,8 @@
       "shift": "2",
       "dedicatedShift": "2",
       "status": "active",
-      "lastServed": "2026-11-08",
-      "servedCount": 25,
+      "lastServed": "2026-11-15",
+      "servedCount": 26,
       "rotation": "Weekly",
       "multiShiftSunday": false,
       "alsoServes": [
@@ -681,7 +688,8 @@
         "2026-10-04",
         "2026-10-18",
         "2026-11-01",
-        "2026-11-08"
+        "2026-11-08",
+        "2026-11-15"
       ],
       "doubleShiftDates": [],
       "note": "Off Aug 23 and Aug 30 for vacation -- confirmed by Mark, not a no-show. Off Oct 11 -- called out well in advance, per Mark."
