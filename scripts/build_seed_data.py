@@ -22,7 +22,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 OUTPUT_PATH = REPO_ROOT / "data" / "seed-data.json"
 CORRECTIONS_PATH = REPO_ROOT / "data" / "corrections.json"
-PULL_DATE = date(2026, 11, 16)
+PULL_DATE = date(2026, 11, 23)
 
 # Dedicated shift-team assignment, set manually by Mark (not inferred from serving
 # history -- someone covering a different shift one week doesn't change their team).
@@ -114,7 +114,8 @@ PEOPLE = [
             ("2026-08-02", "Campus Greeter", "1"), ("2026-08-09", "Campus Greeter", "1"),
             ("2026-08-16", "Campus Greeter", "1"), ("2026-08-30", "Campus Greeter", "1"),
             ("2026-09-06", "Campus Greeter", "1"), ("2026-09-13", "Campus Greeter", "1"),
-            ("2026-09-27", "Campus Greeter", "1"),
+            ("2026-09-27", "Campus Greeter", "1"), ("2026-11-15", "Campus Greeter", "1"),
+            ("2026-11-22", "Campus Greeter", "1"),
         ],
         "alsoServes": {},
         "note": "CCB relabeled Greeter shift times around Jul 29 (service times shifted) -- '8:15am'/'8:30am Guest Services' are both still Shift 1 per Mark, just inconsistent CCB labeling during the transition.",
@@ -141,7 +142,7 @@ PEOPLE = [
             ("2026-09-13", "Parking Lot", "2"), ("2026-09-27", "Parking Lot", "2"),
             ("2026-10-04", "Parking Lot", "2"), ("2026-10-18", "Parking Lot", "2"),
             ("2026-10-25", "Parking Lot", "2"), ("2026-11-01", "Parking Lot", "2"),
-            ("2026-11-15", "Parking Lot", "2"),
+            ("2026-11-15", "Parking Lot", "2"), ("2026-11-22", "Parking Lot", "2"),
         ],
         "alsoServes": {"Communion Prep": "2026-06-27"},
         "note": "Off Aug 23 and Aug 30 for vacation -- confirmed by Mark, not a no-show. Off Oct 11 -- called out well in advance, per Mark.",
@@ -162,6 +163,7 @@ PEOPLE = [
             ("2026-09-27", "Parking Lot", "2"), ("2026-10-04", "Parking Lot", "2"),
             ("2026-10-18", "Parking Lot", "2"), ("2026-11-01", "Parking Lot", "2"),
             ("2026-11-08", "Parking Lot", "2"), ("2026-11-15", "Parking Lot", "2"),
+            ("2026-11-22", "Parking Lot", "2"),
         ],
         "alsoServes": {"Communion Prep": "2026-06-27"},
         "note": "Off Aug 23 and Aug 30 for vacation -- confirmed by Mark, not a no-show. Off Oct 11 -- called out well in advance, per Mark.",
@@ -182,7 +184,7 @@ PEOPLE = [
             ("2026-09-06", "Parking Lot", "2"), ("2026-09-13", "Parking Lot", "3"),
             ("2026-09-27", "Parking Lot", "3"), ("2026-10-04", "Parking Lot", "3"),
             ("2026-10-11", "Parking Lot", "2"), ("2026-10-25", "Parking Lot", "2"),
-            ("2026-11-15", "Parking Lot", "3"),
+            ("2026-11-15", "Parking Lot", "3"), ("2026-11-22", "Parking Lot", "2"),
         ],
         "alsoServes": {},
         "note": "Floats between Shift 2 and Shift 3 -- per Mark (2026-10-26) the dashboard just shows him on whichever shift he served last. Was moved to Shift 3 on 2026-10-07, then served Shift 2 on Oct 11 and Oct 25.",
@@ -237,6 +239,7 @@ PEOPLE = [
             ("2026-09-20", "Parking Lot", "2"), ("2026-09-27", "Parking Lot", "2"),
             ("2026-10-04", "Parking Lot", "2"), ("2026-10-25", "Parking Lot", "2"),
             ("2026-11-01", "Parking Lot", "2"), ("2026-11-15", "Parking Lot", "2"),
+            ("2026-11-22", "Parking Lot", "2"),
         ],
         "alsoServes": {},
     },
@@ -254,7 +257,7 @@ PEOPLE = [
             ("2026-11-15", "Shift Lead", "2"), ("2026-11-15", "Shift Lead", "3"),
         ],
         "alsoServes": {},
-        "note": "Placeholder id -- no CCB member ID on file yet; update if/when known. Covered both shifts Sep 13 and Sep 20 while Scott was off; back to just his own Shift 3 on Sep 27 since Scott resumed Shift 2. Covered both shifts again Oct 4 while Scott was off. On Oct 11 he led his own Shift 3 and also helped park cars on Shift 2 (not leading -- Scott led it) because Shift 2 was short-handed. Mark is Shift Lead for Shift 3 every week by default -- confirmed 2026-09-14 that any week with no other entry for him means he served Shift 3 and it just wasn't logged. Oct 18: just his own Shift 3. Oct 25: took the week off and Shift 3 was canceled -- confirmed by Mark 2026-10-26, so no entry that week (the Shift 3 default doesn't apply). Nov 1: back to just his own Shift 3, confirmed by Mark 2026-11-02. Nov 8: covered both shifts while Scott was out sick, confirmed by Mark 2026-11-09. Nov 15: covered both shifts again while Scott was in the ER, per Mark 2026-11-16.",
+        "note": "Placeholder id -- no CCB member ID on file yet; update if/when known. Covered both shifts Sep 13 and Sep 20 while Scott was off; back to just his own Shift 3 on Sep 27 since Scott resumed Shift 2. Covered both shifts again Oct 4 while Scott was off. On Oct 11 he led his own Shift 3 and also helped park cars on Shift 2 (not leading -- Scott led it) because Shift 2 was short-handed. Mark is Shift Lead for Shift 3 every week by default -- confirmed 2026-09-14 that any week with no other entry for him means he served Shift 3 and it just wasn't logged. Oct 18: just his own Shift 3. Oct 25: took the week off and Shift 3 was canceled -- confirmed by Mark 2026-10-26, so no entry that week (the Shift 3 default doesn't apply). Nov 1: back to just his own Shift 3, confirmed by Mark 2026-11-02. Nov 8: covered both shifts while Scott was out sick, confirmed by Mark 2026-11-09. Nov 15: covered both shifts again while Scott was in the ER, per Mark 2026-11-16. Nov 22: out sick and did not serve, per Mark 2026-11-23, so no entry that week (the Shift 3 default doesn't apply).",
     },
     {
         "id": "68149", "name": "Sean Moser", "joined": "2026-03-15",

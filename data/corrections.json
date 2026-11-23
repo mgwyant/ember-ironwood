@@ -51,8 +51,8 @@
       { "date": "2026-11-08", "position": "Shift Lead", "shifts": ["2"] },
       { "date": "2026-11-15", "position": "Shift Lead", "shifts": ["2"] }
     ],
-    "note": "Titled Shift Lead in CCB (Shift 2). Off Sep 13 and Oct 4 -- Mark covered both shifts those days. Nov 8: CCB shows him accepted as Shift Lead for Shift 2, but Mark confirmed Scott called out sick, so the signup is removed -- Mark covered both shifts. Nov 15: Scott was in the ER and did not serve -- Mark covered both shifts. CCB wasn't pulled that week (Mark gave the roster directly), so this removal guards against any Nov 15 signup showing up in a later pull.",
-    "recordedBy": "Mark, via chat, 2026-11-09 and 2026-11-16"
+    "note": "Titled Shift Lead in CCB (Shift 2). Off Sep 13 and Oct 4 -- Mark covered both shifts those days. Nov 8: CCB shows him accepted as Shift Lead for Shift 2, but Mark confirmed Scott called out sick, so the signup is removed -- Mark covered both shifts. Nov 15: Scott was in the ER and did not serve -- Mark covered both shifts. CCB wasn't pulled that week (Mark gave the roster directly), so this removal guards against any Nov 15 signup showing up in a later pull. Nov 22: no CCB signup and did not serve -- Scott will be out for a while recovering from surgery, per Mark. Ordinary absence, no correction needed; expect him to read Needs Review until he's back.",
+    "recordedBy": "Mark, via chat, 2026-11-09, 2026-11-16, and 2026-11-23"
   },
   "70139": {
     "name": "Brandon Orellana",
@@ -68,13 +68,14 @@
   "36422": {
     "name": "Ben Storrie",
     "addedServedDates": [
-      { "date": "2026-08-23", "position": "Parking Lot", "shifts": ["3"] }
+      { "date": "2026-08-23", "position": "Parking Lot", "shifts": ["3"] },
+      { "date": "2026-11-22", "position": "Parking Lot", "shifts": ["3"] }
     ],
     "removedServedDates": [
       { "date": "2026-10-04", "position": "Parking Lot", "shifts": ["3"] }
     ],
-    "note": "CCB shows no record -- Ben wasn't on the schedule, but Mark confirmed he served his usual shift 3 anyway. Oct 4 is the opposite case -- CCB shows him accepted for Shift 3, but Mark confirmed Ben called out sick that day, so the signup is removed.",
-    "recordedBy": "Mark, via chat, 2026-08-24 and 2026-10-07"
+    "note": "CCB shows no record -- Ben wasn't on the schedule, but Mark confirmed he served his usual shift 3 anyway. Oct 4 is the opposite case -- CCB shows him accepted for Shift 3, but Mark confirmed Ben called out sick that day, so the signup is removed. Nov 22 filled in -- no CCB signup, but Mark believes Ben served Shift 3 (Mark was out sick that day, so this is his best recollection rather than firsthand).",
+    "recordedBy": "Mark, via chat, 2026-08-24, 2026-10-07, and 2026-11-23"
   },
   "66170": {
     "name": "Jamie Weems",
@@ -88,5 +89,21 @@
     ],
     "note": "Jamie (he/him) tried to sign up in CCB but it didn't go through, so CCB shows no record -- Mark confirmed he served shift 2 anyway. Aug 30 filled in the same way -- single shift 2, confirmed by Mark, not a double shift. Sep 13 filled in the same way too -- CCB only shows his Shift 2 signup, but Mark confirmed he stayed and helped cover Shift 3 as well that day. Sep 27 is the opposite case -- CCB shows him accepted for both Shift 2 and Shift 3, but Mark didn't see him at Shift 3 that day and believes he only served Shift 2, so the Shift 3 signup is removed. Nov 1: did not serve and did not sign up in CCB -- he texted Mark he couldn't make it, which Mark reads as a sign he meant to serve, so no correction needed.",
     "recordedBy": "Mark, via chat, 2026-08-24, 2026-09-14, 2026-09-29, and 2026-11-02"
+  },
+  "68857": {
+    "name": "Jeff Hove",
+    "addedServedDates": [
+      { "date": "2026-11-22", "position": "Parking Lot", "shifts": ["3"] }
+    ],
+    "note": "Off Aug 23 and Aug 30 for vacation -- confirmed by Mark, not a no-show. Off Oct 11 -- called out well in advance, per Mark. Nov 22: CCB shows only his Shift 2 signup, but Mark believes he stayed and helped cover Shift 3 as well (Mark was out sick, so this is his best recollection rather than firsthand).",
+    "recordedBy": "Mark, via chat, 2026-11-23"
+  },
+  "68858": {
+    "name": "Wendi Hove",
+    "addedServedDates": [
+      { "date": "2026-11-22", "position": "Parking Lot", "shifts": ["3"] }
+    ],
+    "note": "Off Aug 23 and Aug 30 for vacation -- confirmed by Mark, not a no-show. Off Oct 11 -- called out well in advance, per Mark. Nov 22: CCB shows only her Shift 2 signup, but Mark believes she stayed and helped cover Shift 3 as well (Mark was out sick, so this is his best recollection rather than firsthand).",
+    "recordedBy": "Mark, via chat, 2026-11-23"
   }
 }
